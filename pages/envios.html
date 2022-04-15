@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORA ORA COSTUME</title>
+    <link rel="stylesheet" href="../ccs/estilos.css">
+
+    <!-- Google Fonts - Roboto (Toda la familia)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;
+    0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+    rel="stylesheet">
+
+    <!-- Font Awesome - Icons -->
+    <script src="https://kit.fontawesome.com/d78df47158.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <!-- Buscador -->
+        <div class="header__box">
+            <form class="header__buscador">    
+                <input type="text" id="buscador" name="buscador" placeholder="Buscar...">    
+                <button href="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        
+        <!-- Logo -->
+        <a href="../index.html" class="header__box">
+            <img src="../images/logo.jfif" alt="logo" class="header__logo">
+        </a>
+
+        <!-- Carrito y opciones de sesión -->
+        <div class="header__box">
+            <div class="header__right columnBox">
+                <a href="" class="header__carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>CARRITO (0) $0</span>
+                </a>
+    
+                <div class="header__cuenta">
+                    <a href="">CREAR CUENTA</a>
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                    <a href="">INICIAR SESIÓN</a>
+                </div>    
+            </div>
+        </div>
+        
+        <!-- Navegación -->
+        <nav class="header__nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="medidas.html">Medidas</a></li>
+                <li><a href="envios.html">Envios</a></li>
+                <li><a href="preguntas.html">Preguntas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header> 
+
+    <!-- MAIN -->
+    <main class="main">
+            <h1 class="seccion__titulo">ENVIOS</h1>
+
+            <p class="main__seccion seccion__descripcion">
+                Nosotros trabajamos a través de la empresa OCA y podés consultar cuánto te cuesta
+                el envío a través del siguiente.... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptas libero veniam quis iure sapiente, amet assumenda recusandae perferendis praesentium hic repellendus, nesciunt ipsa nemo necessitatibus facilis consequuntur ex sit.
+            </p>
+
+            <div class="cartel__envios">
+                <div class="cartel__envios--up">
+                    <h2>Elegí dónde recibir tus compras</h2>
+
+                    <h5>Podrás ver costos y tiempos de entrega en todo lo que busques.</h5>
+                </div>
+                
+                <div  class="cartel__envios--down">
+                    <form action="">
+                        <div>
+                            <label for="codigo-postal"></label>
+                            <input required type="number" id="codigo-postal" name="codigo-postal" 
+                            placeholder="Ingrese su código postal" >
+                        </div>
+                        
+                        <div class="form__envio--lBtn">
+                            <button>Usar</button>
+                        </div>
+                    </form>
+
+                    <!-- Nota: Esto está afuera del form para que no tome el required, por lo cual al aplicar estilos también hay que tenerlo en cuenta ya que es un bloque aparte del form -->
+                    <a target="_blank" href="https://www.oca.com.ar/Busquedas/CodigosPostales" class="form__envio--rBtn">
+                        <button>No sé mi código</button>
+                    </a>
+                </div>
+                    
+
+            </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- Navegación -->
+        <div class="footer__box">
+            <nav class="columnBox">
+                <h3>NAVEGACIÓN</h2>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="medidas.html">Medidas</a></li>
+                    <li><a href="envios.html">Envios</a></li>
+                    <li><a href="preguntas.html">Preguntas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- MEDIOS DE PAGO Y ENVIOS-->
+        <div class="footer__box">
+            <div class="footer__pagos columnBox">
+                <h3>MEDIOS DE PAGO</h3>
+                <ul>
+                    <li><img src="../images/pagos/visa.png" alt="visa"></li>
+                    <li><img src="../images/pagos/mastercard@2x.png" alt="master"></li>
+                    <li><img src="../images/pagos/tarjeta-naranja@2x.png" alt="naranja"></li>
+                    <li><img src="../images/pagos/mercadopago@2x.png" alt="mp"></li>
+                    <li><img src="../images/pagos/pagofacil@2x.png" alt="pf"></li>
+                    <li><img src="../images/pagos/rapipago@2x.png" alt="rp"></li>
+                </ul>
+            </div>
+            
+            <div class="footer__envios columnBox">
+                <h3>ENVÍOS</h3>
+                <ul>
+                    <li><img src="../images/envio/mercado-envios@2x.png" alt="me"></li>
+                    <li><img src="../images/envio/andreani.png" alt="andreani"></li>
+                    <li><img src="../images/envio/oca.png" alt="oca"></li>
+                    <li><img src="../images/envio/Logo-Correo-Argentino-3-1200x675.png" alt="ca"></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- NEWSLETTER Y REDES-->
+        <div class="footer__box">
+            <div class="columnBox">
+                <h3>NEWSLETTER</h3>
+                <form action="" class="footer__newsletter">
+                    <input required type="text" id="email" name="mail" placeholder="Email..">
+                    <button>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- REDES -->
+            <nav class="columnBox">
+                <h3>REDES</h3>
+                <ul class="footer__redes">
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- LOGO -->
+        <a href="#" class="footer__box">
+            <img src="../images/logo.jfif" alt="logo" class="footer__logo">
+        </a>
+
+        <!-- DERECHOS RESERVADOS -->
+        <div class="footer__legales">
+            <p>
+                Todos los derechos reservados <span>®</span>
+            </p>
+        </div>
+
+    </footer>
+    
+    <!-- Botón fijo de WhatsApp -->
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!" class="boton--whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+
+</html>
