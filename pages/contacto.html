@@ -70,7 +70,68 @@
 
     <!-- MAIN -->
     <main>
+        <section class="main__seccion">
 
+            <h1 class="seccion__titulo">CONTACTO</h1>
+            <h2 class="seccion__descripcion">
+                Completa este formulario para contactarte con nosotros!
+            </h2>
+
+            <form class="form__contacto" action="">
+
+                <div>
+                    <label for="nombre">NOMBRE</label>
+                    <br>
+                    <input required type="text" id="nombre" 
+                    name="nombre" placeholder="Nombre completo">
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="email">EMAIL</label>
+                    <br>
+                    <input required type="text" id="email"
+                    name="email" placeholder="Email">
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="tipo">TIPO DE CONSULTA</label>
+                    <br>
+                    <select name="tipo" id="tipo">
+                        <option value="ayuda">AYUDA</option>
+                        <option value="envio">ENVÍO</option>
+                        <option value="compras">COMPRAS</option>
+                    </select>
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="mensaje">MENSAJE</label>
+                    <br>
+                    <textarea required name="mensaje" id="mensaje" cols="30" rows="10" 
+                    placeholder="Consulta...."></textarea>       
+                    <br><br>            
+                </div>
+
+                <div>
+                    <button>Enviar</button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <section class="main__seccion">
+            <div class="main__subtitulo">
+                <h2>...O contactanos por WhatsApp!</h2> 
+                <br>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola, 
+                nececito mas informacion!">
+                    <img src="../images/whatsappIcon.svg" alt="logo-wpp">
+                </a>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER -->
