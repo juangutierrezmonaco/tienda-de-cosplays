@@ -138,35 +138,38 @@
 
         <!-- Sección donde se completan datos -->
         <section class="main__seccion">
-            <form class="main__form" action="">
+            <p class="seccion__descripcion">
+                Por último completa este formulario para terminar de completar los datos del cosplay que necesitas!
+            </p>
+            <form class="form__contacto" action="">
 
-                <div>
+                <div class="form__contacto--campo">
                     <label for="nombre-cosplay">Nombre del cosplay</label>
                     <input required type="text" id="nombre-cosplay" name="nombre-cosplay">
                 </div>
 
-                <div>
+                <div class="form__contacto--campo">
                     <label for="edad">Edad (de quien usa el cosplay/ Vestido/ Disfraz)</label>
                     <input required type="number" id="edad" name="edad">
                 </div>
 
-                <div>
+                <div class="form__contacto--campo">
                     <label for="nombre">Nombre y apellido</label>
                     <input required type="text" id="nombre" name="nombre">
                 </div>
 
-                <div>
+                <div class="form__contacto--campo">
                     <label for="celular">Celular</label>
                     <input required type="number" id="celular" nombre="celular">
                 </div>
 
-                <div>
+                <div class="form__contacto--campo">
                     <label for="comentario">Otras medidas o info a tener en cuenta (Ej: Largo de pollera, Largo pantalón corto, etc):</label>
                     <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
                 </div>
 
-                <div>
-                    <button class="main__boton">Enviar</button>
+                <div class="form__contacto--sendBtn">
+                    <button>Enviar</button>
                 </div>
 
             </form>
@@ -221,7 +224,7 @@
             <div class="columnBox">
                 <h3>NEWSLETTER</h3>
                 <form action="" class="footer__newsletter">
-                    <input required type="text" id="email" name="mail" placeholder="Email..">
+                    <input required type="text" id="email--footer" name="mail" placeholder="Email..">
                     <button>
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
