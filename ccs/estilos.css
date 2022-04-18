@@ -81,10 +81,11 @@ iframe {
 /**************************************************************/
 /*                            MAIN                            */
 /**************************************************************/
-.main {
+.main {         /* Nota: Cree una clase main para poder anexar dos clases para aplicar  propiedades. Si tenía un main con una clase, sólo aplica las propiedades de la clase y no las de la etiqueta. Pero aplicando una clase, aplica ambas. */
     display: flex;
     flex-flow: column;
     gap: 50px; 
+    margin-bottom: 50px;
 }
 
 .main__seccion {
@@ -108,7 +109,7 @@ iframe {
     padding: 20px;
     border: solid black;
     border-width: 2px 0;
-
+    text-align: center;
     background: linear-gradient(324deg, rgba(247,247,247,1) 0%, rgba(223,208,231,1) 33%, rgba(226,255,226,1) 66%, rgba(247,247,247,1) 100%);
 }
 
@@ -158,6 +159,8 @@ iframe {
     text-align: center;
     background-color: blueviolet;
     padding-bottom: 50px;
+    border: solid black;
+    border-width: 0 repeat(3, 2px);
 
     display: flex;
     flex-direction: column;
@@ -168,10 +171,9 @@ iframe {
 .cartel__envios--up {       /*Titulo y subtitulo del cartel*/
     color: white;
     background-color: black;
-
     width: 100%;
     padding: 20px;
-
+    
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -195,7 +197,7 @@ iframe {
     padding-left: 5px;
 }
 
-/* Ubicación de botones - Al no estar dentro del form ambos, se    fuerza su ubicación con position*/
+/* Ubicación de botones - Al no estar dentro del form ambos, se fuerza su ubicación con position*/
 .form__envio--lBtn{
     width: 40%;
     position: absolute;
@@ -264,6 +266,7 @@ iframe {
 
 /* Estilos del formulario */
 .form__contacto {
+    align-self: center;
     width: 70%;
     display: flex;
     flex-direction: column;
