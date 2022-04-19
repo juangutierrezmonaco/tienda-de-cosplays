@@ -74,108 +74,106 @@
     </header> 
 
     <!-- MAIN -->
-   <main class="main columnBox">
-        <div class="main--tienda">
-            <h1 class="seccion__titulo">TIENDA</h1>
+   <main class="main main--tienda">
+        <h1 class="main__titulo">TIENDA</h1>
 
 
-            <!-- Seccion principal -->
-            <section class="seccion--tienda">
+        <!-- Seccion principal -->
+        <section class="seccion--tienda">
 
-                <!-- Botones de orden-->
-                <div class="form--orden">
-                    <form action="">
-                        <label for="orden">Ordenar por</label>
-                        <select name="orden" id="orden">
-                            <option value="pred"><span>Mas populares</span></option>
-                            <option value="menor-precio">Menor precio</option>
-                            <option value="mayor-precio">Mayor precio</option>
-                            <option value="nombre-asc">Nombre ascendente</option>
-                            <option value="nombre-des">Nombre descendente</option>
-                        </select>
-                    </form>
-                </div>
+            <!-- Botones de orden-->
+            <div class="form--orden">
+                <form action="">
+                    <label for="orden">Ordenar por</label>
+                    <select name="orden" id="orden">
+                        <option value="pred"><span>Mas populares</span></option>
+                        <option value="menor-precio">Menor precio</option>
+                        <option value="mayor-precio">Mayor precio</option>
+                        <option value="nombre-asc">Nombre ascendente</option>
+                        <option value="nombre-des">Nombre descendente</option>
+                    </select>
+                </form>
+            </div>
 
-                <!-- Opciones de filtro-->
-                <div class="form--filtro">
-                    <form  action="">
-                        <h2>Filtrar por</h2>
-                        
-                        <div>
-                            <input type="checkbox" id="oferta" name="filtrado-articulos">
-                            <label for="oferta">Oferta</label>
-                            <br>
-                        </div>
-    
-                        <div>
-                            <input type="checkbox" id="stock" name="filtrado-articulos">
-                            <label for="stock">En stock</label>
-                            <br>
-                        </div>
-                        
-                        <div>
-                            <input type="checkbox" id="accesorios" name="filtrado-articulos">
-                            <label for="accesorios">Accesorios</label>
-                            <br>
-                        </div>
-                        
-                        <div>
-                            <input type="checkbox" id="especiales" name="filtrado-articulos">
-                            <label for="especiales">Especiales</label>
-                            <br>
-                        </div>
-                                            
-                    </form>
-                </div>
+            <!-- Opciones de filtro-->
+            <div class="form--filtro">
+                <form  action="">
+                    <h2>Filtrar por</h2>
+                    
+                    <div>
+                        <input type="checkbox" id="oferta" name="filtrado-articulos">
+                        <label for="oferta">Oferta</label>
+                        <br>
+                    </div>
 
-                <!-- Catálogo -->
-                <section class="articulos">
-                    <div class="galeria">
-                        <article class="cosplay columnBox">
-                            <img src="../images/cosplays/evangelion-rei.jpg" alt="rei-ayanami">
-                            <h3>SEIFUKU <br> EVANGELION</h3>
-                            <h4>$ 6500</h4>
-                        </article>
-        
-                        <article class="cosplay columnBox">
-                            <img src="../../images/cosplays//jujutsu-nobara.jpg" alt="nobara">
-                            <h3>NOBARA KUGISAKI <br> JUJUTSU KAISEN</h3>
-                            <h4>$ 7000</h4>
-                        </article>
-        
-                        <article class="cosplay columnBox">
-                            <img src="../images/cosplays/school-girl.jpg" alt="school-girl">
-                            <div class="texto">
-                                <h3>SEIFUKU TRADICIONAL</h3>
-                                <h4>$ 6000</h4>
-                            </div>
-                        </article>
-        
-                        <article class="cosplay columnBox">
-                            <img src="../images/cosplays/shigenki-saco.jpg" alt="shigenki-saco">
-                            <h3>SACO MILITAR <br> SHINGEKI NO KYOJIN</h3>
-                            <h4>$ 9500</h4>
-                        </article>
-        
-                        <article class="cosplay columnBox">
-                            <img src="../images/cosplays/shingeki-chaqueta.jpg" alt="shingeki-chaqueta">
-                            <h3>CHAQUETA <br> SHINGEKI NO KYOJIN</h3>
-                            <h4>$4500</h4>
-                        </article>
-        
-                        <article class="cosplay columnBox">
-                            <img src="../images/cosplays/ronnie-theBoy.jpg" alt="ronnie">
-                            <h3>RONNIE</h3>
-                            <h4>$ inf</h4>
-                        </article>
-        
+                    <div>
+                        <input type="checkbox" id="stock" name="filtrado-articulos">
+                        <label for="stock">En stock</label>
+                        <br>
                     </div>
                     
-                    <div class="main__boton">
-                        <button>Mostrar más</button>
+                    <div>
+                        <input type="checkbox" id="accesorios" name="filtrado-articulos">
+                        <label for="accesorios">Accesorios</label>
+                        <br>
                     </div>
-                </section>
-        </div>
+                    
+                    <div>
+                        <input type="checkbox" id="especiales" name="filtrado-articulos">
+                        <label for="especiales">Especiales</label>
+                        <br>
+                    </div>
+                                        
+                </form>
+            </div>
+
+            <!-- Catálogo -->
+            <section class="productos">
+                <div class="galeria">
+                    <article class="cosplay columnBox">
+                        <img src="../images/cosplays/evangelion-rei.jpg" alt="rei-ayanami">
+                        <h3>SEIFUKU <br> EVANGELION</h3>
+                        <h4>$ 6500</h4>
+                    </article>
+    
+                    <article class="cosplay columnBox">
+                        <img src="../../images/cosplays//jujutsu-nobara.jpg" alt="nobara">
+                        <h3>NOBARA KUGISAKI <br> JUJUTSU KAISEN</h3>
+                        <h4>$ 7000</h4>
+                    </article>
+    
+                    <article class="cosplay columnBox">
+                        <img src="../images/cosplays/school-girl.jpg" alt="school-girl">
+                        <div class="texto">
+                            <h3>SEIFUKU TRADICIONAL</h3>
+                            <h4>$ 6000</h4>
+                        </div>
+                    </article>
+    
+                    <article class="cosplay columnBox">
+                        <img src="../images/cosplays/shigenki-saco.jpg" alt="shigenki-saco">
+                        <h3>SACO MILITAR <br> SHINGEKI NO KYOJIN</h3>
+                        <h4>$ 9500</h4>
+                    </article>
+    
+                    <article class="cosplay columnBox">
+                        <img src="../images/cosplays/shingeki-chaqueta.jpg" alt="shingeki-chaqueta">
+                        <h3>CHAQUETA <br> SHINGEKI NO KYOJIN</h3>
+                        <h4>$4500</h4>
+                    </article>
+    
+                    <article class="cosplay columnBox">
+                        <img src="../images/cosplays/ronnie-theBoy.jpg" alt="ronnie">
+                        <h3>RONNIE</h3>
+                        <h4>$ inf</h4>
+                    </article>
+    
+                </div>
+                
+                <div class="main__boton">
+                    <button>Mostrar más</button>
+                </div>
+            </section>
     </main>
 
     <!-- FOOTER -->

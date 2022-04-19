@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /* Body */
 body {
     background-color: #F7F7F7;
@@ -18,7 +19,6 @@ header, main {
 }
 
 /* Modificaciones generales a todos los elementos para manipularlos correctamente */
-
 a {
     text-decoration: none;
 	color: inherit;
@@ -78,333 +78,11 @@ iframe {
     align-items: center;
 }
 
-
-/**************************************************************/
-/*                            MAIN                            */
-/**************************************************************/
-/* Se hace un main general con características generales y además un main por cada html para poder modificar si hace falta cada uno. */
-
-.main {         /* Nota: Cree una clase main para poder anexar dos clases para aplicar  propiedades. Si tenía un main con una clase, sólo aplica las propiedades de la clase y no las de la etiqueta. Pero aplicando una clase, aplica ambas. */
-    display: flex;
-    flex-direction: column;
-    gap: 50px; 
-    margin-bottom: 20px;
-}
-
-.main__titulo {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 30px;
-
-    border: solid black;
-    border-width: 2px 0;
-    background-image: url("../images/backgrounds/seccion__titulo.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.main__seccion {    /* Por defecto las secciones tienen esta configuración*/
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    gap: 10px;
-}
-
-
-.seccion__descripcion {     /*Cada sección tiene su descripción*/
-    padding: 20px;
-    text-align: center;
-    border: solid black;
-    border-width: 2px 0;
-}
-
-.main__boton {      /* Estilo para algunos botones en los main */
-    color: white;
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    padding: 10px;
-    width: fit-content;
-    align-self: center;
-}
-
-.galeria {      /* Se usa tanto como para imágenes, videos, iframes, etc... */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-/*-------------------------------------Index------------------------------------------*/
-.cosplay {
-    text-align: center;
-    margin: 30px;
-    padding: 10px;   
-
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.cosplay img{
-    object-fit: cover;
-}
-
-.cosplay__descripcion {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/*-------------------------------------Tienda-----------------------------------------*/
-.seccion--tienda {
-    padding: 30px;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.form--orden {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-.form--filtro {
-    width: 30%;
-    margin-top: 45px;
-    display: flex;
-    flex-direction: column;
-}
-
-.form--filtro form{
-    border: solid black;
-    border-width: 2px 0;
-    width: fit-content;
-    padding: 10px;
-}
-
-.articulos {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-/*-------------------------------------Medidas----------------------------------------*/
-.medida {
-    color: white;
-    text-align: center;
-    background-color: black;
-    border: solid black;
-    padding: 10px;  
-    gap: 5px;
-}
-
-.medida span {
-    background-color: black;
-    border: solid white;
-    color: white;
-    padding: 5px;
-}
-
-/*-------------------------------------Envios-----------------------------------------*/
-.cartel__envios {       /*Cartel que contiene el formulario*/
-    text-align: center;
-    background-color: blueviolet;
-    padding-bottom: 50px;
-    border: solid black;
-    border-width: 0 repeat(3, 2px);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-
-.cartel__envios--up {       /*Titulo y subtitulo del cartel*/
-    color: white;
-    background-color: black;
-    width: 100%;
-    padding: 20px;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.cartel__envios--down {     /*Formulario y botones*/
-    width: 30%;
-    height: 100px;
-    
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-#codigo-postal {
-    color: black;
-    background-color: white;
-    border: solid black;
-    height: 50px;
-    width: 100%;
-    padding-left: 5px;
-}
-
-/* Ubicación de botones - Al no estar dentro del form ambos, se fuerza su ubicación con position*/
-.form__envio--lBtn{
-    width: 40%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.form__envio--rBtn{
-    width: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.cartel__envios--down button{   /*Estilos de los botones*/
-    width: 100%;
-    background-color: #43CC51;
-    padding: 10px;
-    border: solid black;
-}
-
-/*-------------------------------------Preguntas--------------------------------------*/
-.main__pregunta {
-    color: black;
-    width: 80%;
-    padding: 20px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-self: center;
-}
-
-.pregunta__titulo {
-    font-style: oblique;
-    border: solid black;
-    border-width: 2px 0;
-    padding: 10px;
-} 
-
-/* Por ahora no tiene muchos estilos pero lo dejo preparado para después */
-.pregunta__respuesta {
-    padding: 5px;
-}
-
-.preguntas__contacto {
-    padding: 20px;
-    border: solid black;
-    border-width: 2px 0;
-    align-self: center;
-    gap: 20px;
-}
-
-.preguntas__contacto a span{ 
-    font-size: 2em;
-    font-weight: 600;
-    text-transform: uppercase; 
-    color:#5C5284;
-    padding: 5px;
-}
-
-/*-------------------------------------Contacto---------------------------------------*/
-.seccion--contacto {    /*Es para acomodar esta seccion en fila*/
-    display: flex;
-}
-
-/* Estilos del formulario */
-.form__contacto {
-    align-self: center;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.form__contacto--campo{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    align-items: flex-start;
-    gap: 5px;
-}
-
-.form__contacto--campo input {
-    width: 100%;
-    height: 50px;
-    padding-left: 10px;
-    border: solid;
-    font-size: 1em;
-}
-
-.form__contacto--campo textarea {
-    width: 100%;
-    height: 130px;
-    padding: 10px;
-    border: solid;
-    font-size: 1em;
-}
-
-.form__contacto--sendBtn {
-    align-self: flex-end;
-    width: 30%;
-}
-
-.form__contacto--sendBtn button{
-    color: white;
-    background-color: black;
-    font-size: 1.3em;
-    width: 100%;
-    padding: 15px;
-}
-
-/* Estilo de redes */
-.contacto--redes {
-    color: black;
-
-    width: 50%;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 30px;
-}
- 
-.contacto--redes ul{
-    color: black;
-    font-size: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 20px;
-}
-
-.contacto--redes ul li a{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.contacto--redes ul i{  /*Icono un poco más grande*/
-    font-size: 1.2rem;
-}
-
 /**************************************************************/
 /*                           HEADER                           */
 /**************************************************************/
 header {
+    font-size: 1.2rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -503,11 +181,354 @@ header {
 }
 
 /**************************************************************/
+/*                            MAIN                            */
+/**************************************************************/
+/* Se hace un main general con características generales y además un main por cada html para poder modificar si hace falta cada uno, aunque por el momento no se use queda creado para utilizar en un futuro si hace falta. */
+
+.main {         /* Nota: Cree una clase main para poder anexar dos clases para aplicar  propiedades. Si tenía un main con una clase, sólo aplica las propiedades de la clase y no las de la etiqueta. Pero aplicando una clase, aplica ambas. */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.main__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 30px;
+
+    border: solid black;
+    border-width: 2px 0;
+    background-image: url("../images/backgrounds/seccion__titulo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.main__seccion {    /* Por defecto las secciones tienen esta configuración*/
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+
+.seccion__descripcion {     /*Cada sección tiene su descripción*/
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: large;
+    border: solid black;
+    border-width: 2px 0;
+
+    background-image: url("../images/backgrounds/seccion__descripcion.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main__boton {      /* Estilo para algunos botones en los main */
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+    width: fit-content;
+    align-self: center;
+}
+
+.galeria {      /* Se usa tanto como para imágenes, videos, iframes, etc... */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos de formularios */
+.form {
+    align-self: center;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.form__campo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.form__campo input {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    border: solid;
+    font-size: 1em;
+}
+
+.form__campo textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    border: solid;
+    font-size: 1em;
+}
+
+.form__sendBtn {
+    align-self: flex-end;
+    width: 30%;
+}
+
+.form__sendBtn button{
+    color: white;
+    background-color: black;
+    font-size: 1.3em;
+    width: 100%;
+    padding: 15px;
+}
+
+/*-------------------------------------Index------------------------------------------*/
+.cosplay {
+    text-align: center;
+    margin: 30px;
+    padding: 10px;   
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cosplay img{
+    object-fit: cover;
+}
+
+.cosplay__descripcion {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*-------------------------------------Tienda-----------------------------------------*/
+.seccion--tienda {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.form--orden {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form--filtro {
+    width: 30%;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form--filtro form{
+    border: solid black;
+    border-width: 2px 0;
+    width: fit-content;
+    padding: 10px;
+}
+
+.productos {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*-------------------------------------Medidas----------------------------------------*/
+.medida {
+    color: white;
+    text-align: center;
+    background-color: black;
+    border: solid black;
+    padding: 20px;  
+    gap: 5px;
+}
+
+.medida span {
+    background-color: black;
+    border: solid white;
+    color: white;
+    padding: 5px;
+}
+
+.main--medidas .form .form__sendBtn {
+    align-self: center;
+} 
+
+/*-------------------------------------Envios-----------------------------------------*/
+.cartel__envios {       /*Cartel que contiene el formulario*/
+    text-align: center;
+    background-color: blueviolet;
+    padding-bottom: 50px;
+    border: solid black;
+    border-width: 0 repeat(3, 2px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.cartel__envios--up {       /*Titulo y subtitulo del cartel*/
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cartel__envios--down {     /*Formulario y botones*/
+    width: 30%;
+    height: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#codigo-postal {
+    color: black;
+    background-color: white;
+    border: solid black;
+    height: 50px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+/* Ubicación de botones - Al no estar dentro del form ambos, se fuerza su ubicación con position (La explicación de por qué no están los adentro está en envios.html) */
+.form__envio--lBtn{
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form__envio--rBtn{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cartel__envios--down button{   /*Estilos de los botones*/
+    width: 100%;
+    background-color: #43CC51;
+    padding: 10px;
+    border: solid black;
+}
+
+/*-------------------------------------Preguntas--------------------------------------*/
+.pregunta {
+    color: black;
+    width: 80%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: center;
+}
+
+.pregunta__titulo {
+    font-style: oblique;
+    border: solid black;
+    border-width: 2px 0;
+    padding: 10px;
+} 
+
+/* Por ahora no tiene muchos estilos pero lo dejo preparado para después */
+.pregunta__respuesta {
+    padding: 5px;
+}
+
+.preguntas__contacto {
+    padding: 20px;
+    border: solid black;
+    border-width: 2px 0;
+    align-self: center;
+    gap: 20px;
+}
+
+.preguntas__contacto a span{ 
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase; 
+    color: orange;
+
+    padding: 10px;
+    background-color: #9F05D5;
+    border: solid black;
+    border-width: 2px;
+}
+
+/*-------------------------------------Contacto---------------------------------------*/
+.main--envios .main__seccion {    /*Es para acomodar esta seccion en fila*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.main--envios .seccion__descripcion {
+    width: 100%;
+}
+
+.main--envios .form {
+    width: 60%;
+}
+
+/* Estilo de redes */
+.contacto--redes {
+    color: black;
+
+    width: 35%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+}
+ 
+.contacto--redes ul{
+    color: black;
+    font-size: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.contacto--redes ul li a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contacto--redes ul i{  /*Icono un poco más grande*/
+    font-size: 1.3rem;
+}
+
+/**************************************************************/
 /*                           FOOTER                           */
 /**************************************************************/
 footer {
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
 
     background-color: #5C5284;
     border-top: solid black 2px;
