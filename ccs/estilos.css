@@ -476,17 +476,17 @@ header {
 }
 
 /*-------------------------------------Contacto---------------------------------------*/
-.main--envios .main__seccion {    /*Es para acomodar esta seccion en fila*/
+.main--contacto .main__seccion {    /*Es para acomodar esta seccion en fila*/
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-.main--envios .seccion__descripcion {
+.main--contacto .seccion__descripcion {
     width: 100%;
 }
 
-.main--envios .form {
+.main--contacto .form {
     width: 60%;
 }
 
