@@ -645,15 +645,12 @@ footer {
 /**************************************************************/
 /*                        MEDIA QUERIES                       */
 /**************************************************************/
-
-/*-------------------------------------Tablet-----------------------------------------*/
 @media screen and (max-width: 1024px) {
     header {
         font-size: 1em;
     }
 }
 
-/*-------------------------------------Tablet-----------------------------------------*/
 @media screen and (min-width: 769px) {  /* Escondo cosas que no van en vista desktop*/
     /* Header */
     header .fa-whatsapp{
@@ -809,10 +806,11 @@ footer {
     .main--tienda form{
         font-size: 1rem;
         width: fit-content;
+        display: flex;
+        flex-direction: column;
     }
     
     .form--orden {
-        width: 40%;
         height: fit-content;
     }
     
@@ -828,7 +826,47 @@ footer {
 
 }
 
+@media screen and (max-width: 700px) {
+    /* Main tienda */
+    .seccion--tienda {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Main Contacto */
+    .main--contacto .main__seccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto--redes {
+        border: solid black;
+        border-width: 2px 0;
+        width: 100%;
+    }
+    .form__sendBtn {
+        align-self: center;
+    }
+
+    /* Main Envios */
+    .cartel__envios--down {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 480px) {
+
+    /* Main Envios */
+    .cartel__envios--down {
+        width: 90%;
+    }
+
+    /* Main medidas */
+    .form__sendBtn {
+        width: 100%;
+    }
+
     /**
     /*       Header
     /**/
