@@ -652,11 +652,15 @@ footer {
 }
 
 @media screen and (min-width: 769px) {  /* Escondo cosas que no van en vista desktop*/
-    /* Header */
     header .fa-whatsapp{
         display: none;
     }
+
     header .fa-bars{
+        display: none;
+    }
+
+    header .fa-circle-xmark{
         display: none;
     }
 
@@ -666,6 +670,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    /* Sidebar */
+    #sidebar:target {
+        display: flex;
+        position: fixed;
+        bottom: 15vh;
+    }
 
     /**
     /*       Header
