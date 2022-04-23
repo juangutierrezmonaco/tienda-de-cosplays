@@ -634,8 +634,6 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
-    z-index: 1000;
 }
 
 /**************************************************************/
@@ -680,7 +678,6 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 1000000000;
     }
 
     /* Sidebar */
@@ -693,7 +690,6 @@ footer {
         position: fixed;
         bottom: 15.8vh;
         right: 0;
-
     }
 
     #sidebar ul{
@@ -753,7 +749,7 @@ footer {
         justify-content: space-around;
         position: fixed;
         bottom: 0;
-        z-index: 100000;
+        z-index: 100;
     }
 
     .header__box {
