@@ -710,7 +710,7 @@ footer {
         font-size: 1.3rem;  
     }
 
-    .fa-grip-lines-vertical {     /* Icono barras verticales */
+    #accountOptions  .fa-grip-lines-vertical {     /* Icono barras verticales */
         display: none;
     }
 
@@ -892,12 +892,28 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 50px;
     }
+
     .contacto--redes {
-        border: solid black;
-        border-width: 2px 0;
+        color: white;
+        background-color: black;
         width: 100%;
+        padding: 20px;
+
+        display: flex;
+        align-items: center;
     }
+     
+    .contacto--redes ul{
+        color: white;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .form__sendBtn {
         align-self: center;
     }

@@ -51,7 +51,8 @@
                     <span>CARRITO (0) $0</span>
                 </a>
     
-                <div class="header__cuenta">
+                <div class="header__cuenta" id="accountOptions">
+                    <a href="#"><i class="fa-solid fa-circle-xmark"></i></a>
                     <a href="">CREAR CUENTA</a>
                     <i class="fa-solid fa-grip-lines-vertical"></i>
                     <a href="">INICIAR SESIÓN</a>
@@ -62,6 +63,7 @@
         <!-- Navegación -->
         <nav class="header__nav" id="sidebar">
             <ul>
+                <li><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></li>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="medidas.html">Medidas</a></li>
@@ -76,11 +78,17 @@
             <i class="fa-brands fa-whatsapp"></i>
         </a>
 
-        <a class="header__box" href="#sidebar"> 
+        <!-- Icono Usuario (version mobile) -->
+        <a class="header__box" href="#accountOptions">
+            <i class="fa-regular fa-user"></i>
+        </a>
+
+        <!-- Icono barras (version mobile) -->
+        <a class="header__box" href="#sidebar">
             <i class="fa-solid fa-bars"></i>
         </a>
 
-    </header> 
+    </header>
 
     <!-- MAIN -->
     <main class="main main--contacto">
