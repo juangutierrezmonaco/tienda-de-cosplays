@@ -189,7 +189,6 @@ header {
 }
 
 .main__titulo {
-    font-size: 1.5rem;
     text-align: center;
     padding: 30px;
 
@@ -198,6 +197,10 @@ header {
     background-image: url("../images/backgrounds/seccion__titulo.png");
     background-size: cover;
     background-position: center;
+}
+
+.main__titulo h1 {
+    font-size: 2rem;
 }
 
 .main__seccion {    /* Por defecto las secciones tienen esta configuración*/
@@ -1021,6 +1024,20 @@ footer {
 /**************************************************************/
 /*                        ANIMACIONES                         */
 /**************************************************************/
+/* Animista */
+
+.bounce-top{animation:bounce-top .9s both}
+ @keyframes bounce-top{0%{transform:translateY(-45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-24px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
+
+.rotate-in-center{animation:rotate-in-center .6s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes rotate-in-center{0%{transform:rotate(-360deg);opacity:0}100%{transform:rotate(0);opacity:1}}
+
+.shadow-pop-bl{animation:shadow-pop-bl .3s cubic-bezier(.47,0.000,.745,.715) both}
+ @keyframes shadow-pop-bl{0%{box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;transform:translateX(0) translateY(0)}100%{box-shadow:-1px 1px #3e3e3e,-2px 2px #3e3e3e,-3px 3px #3e3e3e,-4px 4px #3e3e3e,-5px 5px #3e3e3e,-6px 6px #3e3e3e,-7px 7px #3e3e3e,-8px 8px #3e3e3e;transform:translateX(8px) translateY(-8px)}}
+
+
+
+
 /* Generales */
 html {
     scroll-behavior: smooth;
@@ -1037,19 +1054,7 @@ html {
 
 /* Logo */
 .header__logo:hover {
-    animation: zoomLogo 2s;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
-}
-
-@keyframes zoomLogo {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg) scale(1.45) ;
-    }
+    animation: rotate-in-center .9s both;
 }
 
 /* Carrito */
@@ -1153,9 +1158,74 @@ html {
 }
 
 /*                  **/
-/*    MAIN INDEX    **/
+/*       MAINS      **/
 /*                  **/
 
-.cosplay:hover {
+/* Cosplays */
+.cosplay {
+    position: relative;
+    background-image: url("../images/backgrounds/cosplay.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    transition: all .5s;
+}
+
+.cosplay:hover {
+    transform: scale(1.1);
+}
+
+.cosplay i {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    padding: 5px;
+    font-size: 1.5rem;
+    background-color:#E3A077;
+    color: #FCF1EE;
+
+    opacity: 0;
+    transition: all .5s;
+}
+
+.cosplay:hover i {
+    opacity: 1;
+}
+
+.main__boton {
+    transition: all .5s;
+}    
+
+.main__boton:hover {
+    background-color: #E60686;
+    color: antiquewhite;
+    filter:contrast(1.5);
+    transform: scale(1.2);
+}
+
+
+/* Main Medidas */
+.medida:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.medida:hover span {
+    background-color: white;
+    color: black;
+}
+
+/* Forms */
+.form__campo input:focus, textarea:focus {
+    box-shadow: 0 0 10px 5px #C0A3CF;
+    border: solid #E60686;
+}
+.form__sendBtn {
+    transition: all .5s;
+}
+.form__sendBtn:hover {
+    transform: scale(1.2);
+    background-color: white;
+    color: black;
 }

@@ -65,7 +65,7 @@
             <a href="#"><i class="fa-solid fa-circle-xmark"></i></a>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="tienda.html" class="shadow-pop-bl">Tienda</a></li>
                 <li><a href="medidas.html">Medidas</a></li>
                 <li><a href="envios.html">Envios</a></li>
                 <li><a href="preguntas.html">Preguntas</a></li>
@@ -92,7 +92,9 @@
 
     <!-- MAIN -->
    <main class="main main--tienda">
-        <h1 class="main__titulo">TIENDA</h1>
+    <div class="main__titulo">
+        <h1 class="bounce-top">TIENDA</h1>
+    </div>
 
 
         <!-- Seccion principal -->
@@ -159,42 +161,94 @@
             <!-- Catálogo -->
             <section class="productos">
                 <div class="galeria">
-                    <article class="cosplay columnBox">
+                    <article class="cosplay">
                         <img src="../images/cosplays/evangelion-rei.jpg" alt="rei-ayanami">
-                        <h3>SEIFUKU <br> EVANGELION</h3>
-                        <h4>$ 6500</h4>
-                    </article>
+                        <div class="cosplay__descripcion">
+                            <h3>SEIFUKU <br> EVANGELION</h3>
+                            <h4>$ 6500</h4>
+                        </div>
     
-                    <article class="cosplay columnBox">
-                        <img src="../images/cosplays//jujutsu-nobara.jpg" alt="nobara">
-                        <h3>NOBARA KUGISAKI <br> JUJUTSU KAISEN</h3>
-                        <h4>$ 7000</h4>
-                    </article>
-    
-                    <article class="cosplay columnBox">
-                        <img src="../images/cosplays/school-girl.jpg" alt="school-girl">
-                        <div class="texto">
-                            <h3>SEIFUKU TRADICIONAL</h3>
-                            <h4>$ 6000</h4>
+                        <div class="cosplay__carrito">  
+                            <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
                         </div>
                     </article>
     
-                    <article class="cosplay columnBox">
+                    <article class="cosplay">
+                        <img src="../images/cosplays//jujutsu-nobara.jpg" alt="nobara">
+                        <div class="cosplay__descripcion">
+                            <h3>NOBARA KUGISAKI <br> JUJUTSU KAISEN</h3>
+                            <h4>$ 7000</h4>
+                        </div>
+    
+                        <div class="cosplay__carrito">  
+                            <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>
+                    </article>
+    
+                    <article class="cosplay">
+                        <img src="../images/cosplays/school-girl.jpg" alt="school-girl">
+                        <div class="cosplay__descripcion">
+                            <h3>SEIFUKU TRADICIONAL</h3>
+                            <h4>$ 6000</h4>
+                        </div>
+    
+                        <div class="cosplay__carrito">  
+                            <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>
+                    </article>
+    
+                    <article class="cosplay">
                         <img src="../images/cosplays/shigenki-saco.jpg" alt="shigenki-saco">
-                        <h3>SACO MILITAR <br> SHINGEKI NO KYOJIN</h3>
-                        <h4>$ 9500</h4>
+                        <div class="cosplay__descripcion">
+                            <h3>SACO MILITAR <br> SHINGEKI NO KYOJIN</h3>
+                            <h4>$ 9500</h4>
+                        </div>
+    
+                        <div class="cosplay__carrito">  
+                            <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>
                     </article>
     
-                    <article class="cosplay columnBox">
+                    <article class="cosplay">
                         <img src="../images/cosplays/shingeki-chaqueta.jpg" alt="shingeki-chaqueta">
-                        <h3>CHAQUETA <br> SHINGEKI NO KYOJIN</h3>
-                        <h4>$4500</h4>
+                        <div class="cosplay__descripcion">
+                            <h3>CHAQUETA <br> SHINGEKI NO KYOJIN</h3>
+                            <h4>$4500</h4>
+                        </div>
+    
+                        <div class="cosplay__carrito">  
+                            <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>
                     </article>
     
-                    <article class="cosplay columnBox">
+                    <article class="cosplay">
                         <img src="../images/cosplays/ronnie-theBoy.jpg" alt="ronnie">
-                        <h3>RONNIE</h3>
-                        <h4>$ inf</h4>
+                        <div class="cosplay__descripcion">
+                            <h3>RONNIE</h3>
+                            <h4>$ inf</h4>
+                        </div>
+    
+                        <div class="cosplay__carrito">  
+                            <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>                
                     </article>
     
                 </div>
@@ -284,7 +338,11 @@
         
         <!-- LOGO -->
         <a href="#" class="footer__box">
-            <img src="../images/logo.jfif" alt="logo" class="footer__logo">
+            <div class="footer__logo">
+                <img src="../images/logo.jfif" alt="logo">
+                <span>IR ARRIBA!</span>
+            </div>
+            
         </a>
 
         <!-- DERECHOS RESERVADOS -->

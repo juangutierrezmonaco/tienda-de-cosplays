@@ -67,7 +67,7 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="medidas.html">Medidas</a></li>
-                <li><a href="envios.html">Envios</a></li>
+                <li><a href="envios.html" class="shadow-pop-bl">Envios</a></li>
                 <li><a href="preguntas.html">Preguntas</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -92,42 +92,44 @@
 
     <!-- MAIN -->
     <main class="main main--envios">
-            <h1 class="main__titulo">ENVIOS</h1>
+        <div class="main__titulo">
+            <h1 class="bounce-top">ENVIOS</h1>
+        </div>
             
-            <section class="main__seccion">
-                <p class="seccion__descripcion">
-                    Nosotros trabajamos a través de la empresa OCA y podés consultar cuánto te cuesta
-                    el envío a través del siguiente.... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptas libero veniam quis iure sapiente, amet assumenda recusandae perferendis praesentium hic repellendus, nesciunt ipsa nemo necessitatibus facilis consequuntur ex sit.
-                </p>
-    
-                <div class="cartel__envios">
-                    <div class="cartel__envios--up">
-                        <h2>Elegí dónde recibir tus compras</h2>
-    
-                        <h5>Podrás ver costos y tiempos de entrega en todo lo que busques.</h5>
-                    </div>
-                    
-                    <div  class="cartel__envios--down">
-                        <form action="">
-                            <div>
-                                <label for="codigo-postal"></label>
-                                <input required type="number" id="codigo-postal" name="codigo-postal" 
-                                placeholder="Ingrese su código postal" >
-                            </div>
-                            
-                            <div class="form__envio--lBtn">
-                                <button>Usar</button>
-                            </div>
-                        </form>
-    
-                        <!-- Nota: Esto está afuera del form para que no tome el required, por lo cual al aplicar estilos también hay que tenerlo en cuenta ya que es un bloque aparte del form -->
-                        <a target="_blank" href="https://www.oca.com.ar/Busquedas/CodigosPostales" class="form__envio--rBtn">
-                            <button>No sé mi código</button>
-                        </a>
-                    </div>
-                <div>
-                    
-            </section>
+        <section class="main__seccion">
+            <p class="seccion__descripcion">
+                Nosotros trabajamos a través de la empresa OCA y podés consultar cuánto te cuesta
+                el envío a través del siguiente.... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptas libero veniam quis iure sapiente, amet assumenda recusandae perferendis praesentium hic repellendus, nesciunt ipsa nemo necessitatibus facilis consequuntur ex sit.
+            </p>
+
+            <div class="cartel__envios">
+                <div class="cartel__envios--up">
+                    <h2>Elegí dónde recibir tus compras</h2>
+
+                    <h5>Podrás ver costos y tiempos de entrega en todo lo que busques.</h5>
+                </div>
+                
+                <div  class="cartel__envios--down">
+                    <form action="">
+                        <div>
+                            <label for="codigo-postal"></label>
+                            <input required type="number" id="codigo-postal" name="codigo-postal" 
+                            placeholder="Ingrese su código postal" >
+                        </div>
+                        
+                        <div class="form__envio--lBtn">
+                            <button>Usar</button>
+                        </div>
+                    </form>
+
+                    <!-- Nota: Esto está afuera del form para que no tome el required, por lo cual al aplicar estilos también hay que tenerlo en cuenta ya que es un bloque aparte del form -->
+                    <a target="_blank" href="https://www.oca.com.ar/Busquedas/CodigosPostales" class="form__envio--rBtn">
+                        <button>No sé mi código</button>
+                    </a>
+                </div>
+            <div>
+                
+        </section>
     </main>
 
     <!-- FOOTER -->
@@ -209,7 +211,11 @@
         
         <!-- LOGO -->
         <a href="#" class="footer__box">
-            <img src="../images/logo.jfif" alt="logo" class="footer__logo">
+            <div class="footer__logo">
+                <img src="../images/logo.jfif" alt="logo">
+                <span>IR ARRIBA!</span>
+            </div>
+            
         </a>
 
         <!-- DERECHOS RESERVADOS -->
