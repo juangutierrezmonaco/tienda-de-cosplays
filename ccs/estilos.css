@@ -737,9 +737,13 @@ footer {
         justify-content: center;
         align-items: flex-end;
     }
+
     #accountOptions .fa-circle-xmark {
-        /* No sé por qué no se aplica de arriba, así que lo puse acá */
+        /* No sé por qué no se aplica de arriba el tamaño, así que lo puse acá. Además fallaba el position. */
         font-size: 1.3rem;  
+        position: relative;
+        top: 0;
+        right: 0;
     }
 
     #accountOptions  .fa-grip-lines-vertical {     /* Icono barras verticales */
@@ -1150,8 +1154,7 @@ html {
 
     display: flex;
     justify-content: center;
-    align-items: center;/* 
-    background:rgba(230, 6, 134, 0.9); */
+    align-items: center;
     background: rgba(0, 0, 0, 0.9); 
 
     opacity: 0;
