@@ -41,7 +41,6 @@ input, textarea {
     border: none;
     background-color: transparent;
     outline: none;  /* Para que no tenga borde al clicklearlo*/
-    resize: none;
 }
 
 img, iframe {
@@ -321,6 +320,44 @@ footer {
 }
 
 /**************************************************************/
+/*                     MAIN CONTACTO                          */
+/**************************************************************/
+
+/* Animaciones */
+.contacto--redes li:hover {
+    padding: 5px;
+    transition: all 1s;
+}
+
+.instagram:hover a, .facebook:hover a, .whatsapp:hover a, .telefono:hover a, .mail:hover a{
+    color: #fff;
+}
+
+.instagram:hover {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.whatsapp:hover {
+    background-color: #43CC51;
+}
+
+.telefono:hover {
+    background-color: #FF4554;
+}
+
+.mail:hover {
+    background-color: #5E5485;
+}
+
+/**************************************************************/
 /*                            MAIN                            */
 /**************************************************************/
 /* Se hace un main general con características generales y además un main por cada html para poder modificar si hace falta cada uno, aunque por el momento no se use queda creado para utilizar en un futuro si hace falta. */
@@ -365,70 +402,6 @@ footer {
     background-position: center;
 }
 
-.main__boton {      /* Estilo para algunos botones en los main */
-    color: white;
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    padding: 10px;
-    width: fit-content;
-    align-self: center;
-}
-
-.galeria {      /* Se usa tanto como para imágenes, videos, iframes, etc... */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 20px;
-}
-
-/* Estilos de formularios */
-.form {
-    align-self: center;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.form__campo{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    align-items: flex-start;
-    gap: 5px;
-}
-
-.form__campo input {
-    width: 100%;
-    height: 50px;
-    padding-left: 10px;
-    border: solid;
-    font-size: 1em;
-}
-
-.form__campo textarea {
-    width: 100%;
-    height: 130px;
-    padding: 10px;
-    border: solid;
-    font-size: 1em;
-}
-
-.form__sendBtn {
-    align-self: flex-end;
-    width: 30%;
-}
-
-.form__sendBtn button{
-    color: white;
-    background-color: black;
-    font-size: 1.3em;
-    width: 100%;
-    padding: 15px;
-}
 
 /*-------------------------------------Index------------------------------------------*/
 .cosplay {
@@ -452,178 +425,4 @@ footer {
     justify-content: center;
 }
 
-/*-------------------------------------Tienda-----------------------------------------*/
-.seccion--tienda {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.form--orden {
-    font-size: 1.2rem;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.form--orden select{
-    font-size: inherit;
-}
-
-.form--filtro {
-    font-size: 1.3rem;
-    width: 30%;
-    margin-top: 45px;
-    display: flex;
-    flex-direction: column;
-}
-
-.form--filtro form{
-    border: solid black;
-    border-width: 2px 0;
-    width: fit-content;
-    padding: 10px;
-}
-
-.productos {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*-------------------------------------Medidas----------------------------------------*/
-.medida {
-    color: white;
-    text-align: center;
-    background-color: black;
-    border: solid black;
-    padding: 20px;  
-    gap: 5px;
-}
-
-.medida span {
-    background-color: black;
-    border: solid white;
-    color: white;
-    padding: 5px;
-}
-
-.main--medidas .form .form__sendBtn {
-    align-self: center;
-} 
-
-/*-------------------------------------Envios-----------------------------------------*/
-.cartel__envios {       /*Cartel que contiene el formulario*/
-    text-align: center;
-    background-color: blueviolet;
-    padding-bottom: 50px;
-    border: solid black;
-    border-width: 0 repeat(3, 2px);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-
-.cartel__envios--up {       /*Titulo y subtitulo del cartel*/
-    color: white;
-    background-color: black;
-    width: 100%;
-    padding: 20px;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.cartel__envios--down {     /*Formulario y botones*/
-    width: 40%;
-    height: 100px;
-    
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-#codigo-postal {
-    color: black;
-    background-color: white;
-    border: solid black;
-    height: 50px;
-    width: 100%;
-    padding-left: 5px;
-}
-
-/* Ubicación de botones - Al no estar dentro del form ambos, se fuerza su ubicación con position (La explicación de por qué no están los adentro está en envios.html) */
-.form__envio--lBtn{
-    width: 40%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.form__envio--rBtn{
-    width: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.cartel__envios--down button{   /*Estilos de los botones*/
-    width: 100%;
-    background-color: #43CC51;
-    padding: 10px;
-    border: solid black;
-}
-
-
-
-/*-------------------------------------Contacto---------------------------------------*/
-.main--contacto .main__seccion {    /*Es para acomodar esta seccion en fila*/
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.main--contacto .seccion__descripcion {
-    width: 100%;
-}
-
-.main--contacto .form {
-    width: 60%;
-}
-
-/* Estilo de redes */
-.contacto--redes {
-    color: black;
-
-    width: 35%;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 30px;
-}
- 
-.contacto--redes ul{
-    color: black;
-    font-size: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 20px;
-}
-
-.contacto--redes ul li a{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.contacto--redes ul i{  /*Icono un poco más grande*/
-    font-size: 1.3rem;
-}
 

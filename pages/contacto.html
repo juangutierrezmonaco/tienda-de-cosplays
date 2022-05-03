@@ -138,76 +138,80 @@
                 Completa este formulario para contactarte con nosotros!
             </h2>
 
-            <form class="form" action="">
+            <div class="row">
 
-                <div class="form__campo">
-                    <label for="nombre--contacto">NOMBRE</label>
-                    <input required type="text" id="nombre--contacto" 
-                    name="nombre--contacto">
-                </div>
+                <form class="col-12 col-md-7 form d-grid gap-3 mb-3" action="">
 
-                <div class="form__campo">
-                    <label for="email--contacto">EMAIL</label>
-                    <input required type="text" id="email--contacto"
-                    name="email--contacto">
-                </div>
-
-                <div class="form__campo">
-                    <label for="telefono--contacto">TELÉFONO (Opcional)</label>
-                    <input type="number" id="telefono--contacto"
-                    name="telefono--contacto">
-                </div>
-
-                <div class="form__campo">
-                    <label for="mensaje--contacto">MENSAJE (Opcional)</label>
-                    <textarea name="mensaje--contacto" id="mensaje--contacto" ></textarea>  
-                </div>
-
-                <div class="form__sendBtn">
-                    <button>Enviar</button>
-                </div>
-
-            </form>
-            
-            <section class="contacto--redes">
-                <h3>O contactános por nuestras redes!</h3> 
-
-                <ul>
-                    <li class="instagram">
-                        <a target="_blank" href="https://www.instagram.com/">
-                            <span>Instagram</span>
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="facebook">
-                        <a target="_blank" href="https://www.facebook.com/">
-                            <span>Facebook</span>
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="whatsapp">
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!">
-                            <span>WhatsApp</span>
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </li>
-                    <li class="telefono">
-                        <a href="tel:2236690005">
-                            <span>2236690005</span>
-                            <i class="fa-solid fa-phone"></i>
-                        </a>
-                    </li>
-                    <li class="mail">
-                        <a href="mailto:oraoracostume@gmail.com">
-                            <span>oraoracostume@gmail.com</span>
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </li>
-                </ul>
-            </section>
+                    <div class="form-group d-flex flex-column align-items-start">
+                        <label for="nombre--contacto">NOMBRE</label>
+                        <input required type="text" id="nombre--contacto" 
+                        name="nombre--contacto" class="form-control">
+                    </div>
+    
+                    <div class="form-group d-flex flex-column align-items-start">
+                        <label for="email--contacto">EMAIL</label>
+                        <input required type="text" id="email--contacto"
+                        name="email--contacto" class="form-control">
+                    </div>
+    
+                    <div class="form-group d-flex flex-column align-items-start">
+                        <label for="telefono--contacto">TELÉFONO (Opcional)</label>
+                        <input type="number" id="telefono--contacto"
+                        name="telefono--contacto" class="form-control">
+                    </div>
+    
+                    <div class="form-group d-flex flex-column align-items-start">
+                        <label for="mensaje--contacto">MENSAJE (Opcional)</label>
+                        <textarea name="mensaje--contacto" id="mensaje--contacto"  class="form-control"></textarea>  
+                    </div>
+    
+                    <div class="mt-3 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-dark">
+                            Enviar
+                        </button>
+                    </div>
+    
+                </form>
+                
+                <section class="col-12 col-md-5 contacto--redes bg-dark text-white d-grid p-3 fs-4">
+                    <h3>O contactános por nuestras redes!</h3> 
+    
+                    <ul class="d-grid gap-2">
+                        <li class="instagram">
+                            <a target="_blank" href="https://www.instagram.com/">
+                                <span>Instagram</span>
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a target="_blank" href="https://www.facebook.com/">
+                                <span>Facebook</span>
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="whatsapp">
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!">
+                                <span>WhatsApp</span>
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="telefono">
+                            <a href="tel:2236690005">
+                                <span>2236690005</span>
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                        </li>
+                        <li class="mail">
+                            <a href="mailto:oraoracostume@gmail.com">
+                                <span>oraoracostume@gmail.com</span>
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
 
         </section>
-
         
     </main>
 
