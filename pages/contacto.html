@@ -211,12 +211,13 @@
         
     </main>
 
+    
     <!-- FOOTER -->
     <footer>
-        <!-- Navegación -->
-        <div class="footer__box footer__nav">
-            <nav class="columnBox">
-                <h3>NAVEGACIÓN</h2>
+        <div class="row p-2 g-5">
+            <!-- Navegación -->
+            <div class="footer__nav col-6 col-sm-3">
+                <h3>NAVEGACIÓN</h3>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="tienda.html">Tienda</a></li>
@@ -225,94 +226,96 @@
                     <li><a href="preguntas.html">Preguntas</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
-            </nav>
-        </div>
-
-        <!-- MEDIOS DE PAGO Y ENVIOS-->
-        <div class="footer__box">
-            <div class="footer__pagos columnBox">
-                <h3>MEDIOS DE PAGO</h3>
-                <ul>
-                    <li><img src="../images/pagos/visa.png" alt="visa"></li>
-                    <li><img src="../images/pagos/mastercard@2x.png" alt="master"></li>
-                    <li><img src="../images/pagos/tarjeta-naranja@2x.png" alt="naranja"></li>
-                    <li><img src="../images/pagos/mercadopago@2x.png" alt="mp"></li>
-                    <li><img src="../images/pagos/pagofacil@2x.png" alt="pf"></li>
-                    <li><img src="../images/pagos/rapipago@2x.png" alt="rp"></li>
-                </ul>
             </div>
-            
-            <div class="footer__envios columnBox">
-                <h3>ENVÍOS</h3>
-                <ul>
-                    <li><img src="../images/envio/mercado-envios@2x.png" alt="me"></li>
-                    <li><img src="../images/envio/andreani.png" alt="andreani"></li>
-                    <li><img src="../images/envio/oca.png" alt="oca"></li>
-                    <li><img src="../images/envio/Logo-Correo-Argentino-3-1200x675.png" alt="ca"></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- NEWSLETTER Y REDES-->
-        <div class="footer__box">
-            <div class="columnBox">
-                <h3>NEWSLETTER</h3>
-                <form action="" class="footer__newsletter">
-                    <input required type="text" id="email--footer" name="mail" placeholder="Email..">
-                    <button>
-                        <i class="fa-solid fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
-
-            <!-- REDES -->
-            <nav class="columnBox">
-                <h3>REDES</h3>
-                <ul class="footer__redes">
-                    <li>
-                        <a target="_blank" href="https://www.instagram.com/">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.youtube.com/">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
         
-        <!-- LOGO -->
-        <a href="#" class="footer__box">
-            <div class="footer__logo">
-                <img src="../images/logo.jfif" alt="logo">
-                <span>IR ARRIBA!</span>
+            <!-- MEDIOS DE PAGO Y ENVIOS-->
+            <div class="col-6 col-sm-3">
+                <div class="row footer__pagos">
+                    <h3>MEDIOS DE PAGO</h3>
+                    <ul>
+                        <li><img src="../images/pagos/visa.png" alt="visa"></li>
+                        <li><img src="../images/pagos/mastercard@2x.png" alt="master"></li>
+                        <li><img src="../images/pagos/tarjeta-naranja@2x.png" alt="naranja"></li>
+                        <li><img src="../images/pagos/mercadopago@2x.png" alt="mp"></li>
+                        <li><img src="../images/pagos/pagofacil@2x.png" alt="pf"></li>
+                        <li><img src="../images/pagos/rapipago@2x.png" alt="rp"></li>
+                    </ul>
+                </div>
+            
+                <div class="row footer__envios">
+                    <h3>ENVÍOS</h3>
+                    <ul>
+                        <li><img src="../images/envio/mercado-envios@2x.png" alt="me"></li>
+                        <li><img src="../images/envio/andreani.png" alt="andreani"></li>
+                        <li><img src="../images/envio/oca.png" alt="oca"></li>
+                        <li><img src="../images/envio/Logo-Correo-Argentino-3-1200x675.png" alt="ca"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- NEWSLETTER Y REDES-->
+            <div class="col-6 col-sm-3">
+
+                <!-- NEWSLETTER -->
+                <div class="row mb-3">
+                    <h3>NEWSLETTER</h3>
+                    <div class="input-group px-lg-3">
+                        <input type="text" class="form-control" placeholder="Mail..." id="newsletter">
+                        <button class="btn btn-dark text-white">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- REDES -->
+                <nav class="row">
+                    <h3>REDES</h3>
+                    <ul class="footer__redes">
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             
-        </a>
+            <!-- LOGO -->
+            <div class="col-6 col-sm-3 d-flex justify-content-center">
+                <a href="#" class="footer__logo">
+                    <img src="../images/logo.jfif" alt="logo">
+                    <span class="text-center">IR ARRIBA!</span>
+                </a>
+            </div>
+
+        </div>
 
         <!-- DERECHOS RESERVADOS -->
-        <div class="footer__legales">
-            <p>
+        <div class="row footer__legales">
+            <p class=" d-flex justify-content-end px-5 py-1">
                 Todos los derechos reservados <span>®</span>
             </p>
         </div>
-
+        
     </footer>
     
     <!-- Botón fijo de WhatsApp -->
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!" class="boton--whatsapp">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!" class="boton--whatsapp d-none d-md-flex">
                     <i class="fa-brands fa-whatsapp"></i>
     </a>
 
     <!-- Botón fijo para ir arribar en version mobile -->
-    <a href="#" class="boton--goUp">
+    <a href="#" class="boton--goUp d-md-none">
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 
