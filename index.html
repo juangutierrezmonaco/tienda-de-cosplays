@@ -38,15 +38,15 @@
     <header>
 
         <!-- Parte superior del header -->
-        <div class="row mb-3">
-            
+        <div class="d-none d-md-flex row mb-3">
+
             <!-- Buscador -->
             <div class="col-4 d-flex justify-content-center align-items-center">
                 <div class="input-group header__buscador px-lg-3">
-                    <input type="text" class="form-control" placeholder="Buscar...">
-                    <button class="btn btn-info text-white" type="button">
+                    <input type="text" class="form-control" placeholder="Buscar..." id="buscador">
+                    <a class="btn btn-info text-white " type="button">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -79,15 +79,37 @@
         <!-- Navbar -->
         <div class="row">
             <nav class="navbar navbar-light navbar-expand-md p-0 border-top border-bottom">
-                <div class="container-fluid text-uppercase p-0">
+                <div class="container-fluid text-uppercase p-md-0 ">
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header__nav" aria-controls="header__nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <a class="navbar-toggler header__box" href="index.html" >
+                        <img src="images/logo.jfif" alt="logo" class="rounded-circle">
+                    </a>
+
+                    <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse" data-bs-target="#buscador" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!" class="navbar-toggler header__box">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse" data-bs-target="#accountOptions" aria-controls="accountOptions" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+
+
+                    <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse" data-bs-target="#header__nav" aria-controls="header__nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse fs-4" id="header__nav">
                         <ul class="nav nav-pills nav-fill me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-evenly">
-                            <li class="nav-item"><a href="index.html" class="nav-link  active rounded-0">Inicio</a></li>
+                            <li class="nav-item"><a href="index.html" class="nav-link active rounded-0">Inicio</a></li>
                             <li class="nav-item"><a href="pages/tienda.html" class="nav-link">Tienda</a></li>
                             <li class="nav-item"><a href="pages/medidas.html" class="nav-link">Medidas</a></li>
                             <li class="nav-item"><a href="pages/envios.html" class="nav-link">Envios</a></li>
@@ -100,21 +122,6 @@
                 </div>
               </nav>
         </div>
-
-        <!-- Botón fijo de WhatsApp -->
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!" class="header__box">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
-
-        <!-- Icono Usuario (version mobile) -->
-        <a class="header__box" href="#accountOptions">
-            <i class="fa-regular fa-user"></i>
-        </a>
-
-        <!-- Icono barras (version mobile) -->
-        <a class="header__box" href="#sidebar">
-            <i class="fa-solid fa-bars"></i>
-        </a>
 
     </header>
 

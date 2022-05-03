@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ORA ORA COSTUME</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../ccs/estilos.css">
 
     <!-- Google Fonts - Roboto (Toda la familia)-->
@@ -18,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    
     <!-- Font Awesome - Icons -->
     <script src="https://kit.fontawesome.com/d78df47158.js" crossorigin="anonymous"></script>
 
@@ -27,69 +33,95 @@
 </head>
 
 <body>
-    
+
     <!-- HEADER -->
     <header>
 
-        <!-- Buscador -->
-        <div class="header__box">
-            <form class="header__buscador">    
-                <input type="text" id="buscador" name="buscador" placeholder="Buscar...">    
-                <button>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </form>
-        </div>
-        
-        <!-- Logo -->
-        <a href="../index.html" class="header__box header__box--first">
-            <img src="../images/logo.jfif" alt="logo" class="header__logo">
-        </a>
+        <!-- Parte superior del header -->
+        <div class="d-none d-md-flex row mb-3">
 
-        <!-- Carrito y opciones de sesión -->
-        <div class="header__box">
-            <div class="header__right columnBox">
-                <a href="" class="header__carrito">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span>CARRITO (0) $0</span>
-                </a>
-    
-                <div class="header__cuenta" id="accountOptions">
-                    <a href="#"><i class="fa-solid fa-circle-xmark"></i></a>
-                    <a href="">CREAR CUENTA</a>
-                    <i class="fa-solid fa-grip-lines-vertical"></i>
-                    <a href="">INICIAR SESIÓN</a>
-                </div>    
+            <!-- Buscador -->
+            <div class="col-4 d-flex justify-content-center align-items-center">
+                <div class="input-group header__buscador px-lg-3">
+                    <input type="text" class="form-control" placeholder="Buscar..." id="buscador">
+                    <a class="btn btn-info text-white" type="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Logo -->
+            <a href="index.html" class="col-4 d-flex justify-content-center align-items-center header__logo">
+                <img src="../images/logo.jfif" alt="logo" class="img-fluid rounded-circle col-lg-10">
+            </a>
+
+            <!-- Carrito y opciones de usuario -->
+            <div class="col-4 d-flex justify-content-center align-items-center">
+
+                <div class="col-12 col-lg-9">
+
+                    <div class="p-0 header__carrito mb-1">
+                        <button type="button" class="btn btn-primary rounded-0 w-100 text-white fs-4">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>CARRITO (0) $0</span>
+                        </button>
+                    </div>
+                    
+                    <div class="d-flex justify-content-evenly" id="accountOptions">
+                        <a href="">CREAR CUENTA</a>
+                        <span>|</span>
+                        <a href="">INICIAR SESIÓN</a>
+                    </div>  
+                </div> 
             </div>
         </div>
-        
-        <!-- Navegación -->
-        <nav class="header__nav" id="sidebar">
-            <a href="#"><i class="fa-solid fa-circle-xmark"></i></a>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="medidas.html">Medidas</a></li>
-                <li><a href="envios.html" class="shadow-pop-bl">Envios</a></li>
-                <li><a href="preguntas.html">Preguntas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
 
-        <!-- Botón fijo de WhatsApp -->
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!" class="header__box">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
+        <!-- Navbar -->
+        <div class="row">
+            <nav class="navbar navbar-light navbar-expand-md p-0 border-top border-bottom">
+                <div class="container-fluid text-uppercase p-md-0 ">
 
-        <!-- Icono Usuario (version mobile) -->
-        <a class="header__box" href="#accountOptions">
-            <i class="fa-regular fa-user"></i>
-        </a>
+                    <a class="navbar-toggler header__box" href="index.html" >
+                        <img src="images/logo.jfif" alt="logo" class="rounded-circle">
+                    </a>
 
-        <!-- Icono barras (version mobile) -->
-        <a class="header__box" href="#sidebar">
-            <i class="fa-solid fa-bars"></i>
-        </a>
+                    <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse" data-bs-target="#buscador" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!" class="navbar-toggler header__box">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse" data-bs-target="#accountOptions" aria-controls="accountOptions" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+
+
+                    <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse" data-bs-target="#header__nav" aria-controls="header__nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse fs-4" id="header__nav">
+                        <ul class="nav nav-pills nav-fill me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-evenly">
+                            <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="tienda.html" class="nav-link">Tienda</a></li>
+                            <li class="nav-item"><a href="medidas.html" class="nav-link">Medidas</a></li>
+                            <li class="nav-item"><a href="envios.html" class="nav-link active rounded-0">Envios</a></li>
+                            <li class="nav-item"><a href="preguntas.html" class="nav-link">Preguntas</a></li>
+                            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                        </ul>
+                        
+                    </div>
+
+                </div>
+              </nav>
+        </div>
 
     </header>
 
