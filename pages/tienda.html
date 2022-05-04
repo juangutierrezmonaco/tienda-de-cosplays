@@ -82,7 +82,7 @@
                 <div class="container-fluid text-uppercase p-md-0 ">
 
                     <a class="navbar-toggler header__box" href="index.html" >
-                        <img src="images/logo.jfif" alt="logo" class="rounded-circle">
+                        <img src="../images/logo.jfif" alt="logo" class="rounded-circle">
                     </a>
 
                     <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse" data-bs-target="#buscador" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation">
@@ -127,82 +127,86 @@
 
     <!-- MAIN -->
    <main class="main main--tienda">
-    <div class="main__titulo p-5">
-        <h1 class="bounce-top">TIENDA</h1>
-    </div>
-
+        <div class="main__titulo p-5">
+            <h1 class="bounce-top">TIENDA</h1>
+        </div>
 
         <!-- Seccion principal -->
-        <section class="seccion--tienda">
+        <section class="d-flex flex-column gap-5">
 
-            <!-- Botones de orden-->
-            <div class="form--orden">
-                <form action="">
-                    <label for="orden">Ordenar por</label>
-                    <select name="orden" id="orden">
-                        <option value="pred"><span>Mas populares</span></option>
-                        <option value="menor-precio">Menor precio</option>
-                        <option value="mayor-precio">Mayor precio</option>
-                        <option value="nombre-asc">Nombre ascendente</option>
-                        <option value="nombre-des">Nombre descendente</option>
-                    </select>
-                </form>
-            </div>
+            <div class="row d-flex justify-content-evenly">
 
-            <!-- Opciones de filtro-->
-            <div class="form--filtro">
-                <form  action="">
-                    <h2>Filtrar por</h2>
-                    
-                    <div>
-                        <input type="checkbox" id="oferta" name="filtrado-articulos">
-                        <label for="oferta">Oferta</label>
-                        <br>
-                    </div>
+                <!-- Botones de orden-->
+                <div class="col-5">
+                    <form class="form">
+                        <label for="orden" class="form-label">Ordenar por</label>
+                        <select name="orden" id="orden" class="form-select">
+                            <option value="pred"><span>Mas populares</span></option>
+                            <option value="menor-precio">Menor precio</option>
+                            <option value="mayor-precio">Mayor precio</option>
+                            <option value="nombre-asc">Nombre ascendente</option>
+                            <option value="nombre-des">Nombre descendente</option>
+                        </select>
+                    </form>
+                </div>
 
-                    <div>
-                        <input type="checkbox" id="stock" name="filtrado-articulos">
-                        <label for="stock">En stock</label>
-                        <br>
-                    </div>
-                    
-                    <div>
-                        <input type="checkbox" id="accesorios" name="filtrado-articulos">
-                        <label for="accesorios">Accesorios</label>
-                        <br>
-                    </div>
-                    
-                    <div>
-                        <input type="checkbox" id="especiales" name="filtrado-articulos">
-                        <label for="especiales">Especiales</label>
-                        <br>
-                    </div>
-                                        
-                </form>
-            </div>
+                <!-- Opciones de filtro-->
+                <div class="col-5 d-none d-md-flex">
+                    <form>
+                        <h2>Filtrar por</h2>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" id="oferta" name="filtrado-articulos" class="form-check-input">
+                            <label for="oferta" class="form-check-label">Oferta</label>
+                            <br>
+                        </div>
 
-            <div class="form--filtroMobile">
-                <form action="">
-                    <label for="filtradoMobile">Filtrar por</label>
-                    <select name="filtradoMobile" id="filtradoMobile">
-                        <option value="pred"><span>Oferta</span></option>
-                        <option value="menor-precio">En stock</option>
-                        <option value="mayor-precio">Accesorios</option>
-                        <option value="nombre-asc">Especiales</option>
-                    </select>
-                </form>
+                        <div class="form-check">
+                            <input type="checkbox" id="stock" name="filtrado-articulos" class="form-check-input">
+                            <label for="stock" class="form-check-label">En stock</label>
+                            <br>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" id="accesorios" name="filtrado-articulos" class="form-check-input">
+                            <label for="accesorios" class="form-check-label">Accesorios</label>
+                            <br>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" id="especiales" name="filtrado-articulos" class="form-check-input">
+                            <label for="especiales" class="form-check-label">Especiales</label>
+                            <br>
+                        </div>
+                                            
+                    </form>
+                </div>
+
+                <div class="form col-5 d-flex d-md-none">
+                    <form class="col-12">
+                        <label for="filtradoMobile" class="form-label">Filtrar por</label>
+                        <select name="filtradoMobile" id="filtradoMobile" class="form-select">
+                            <option value="pred"><span>Oferta</span></option>
+                            <option value="menor-precio">En stock</option>
+                            <option value="mayor-precio">Accesorios</option>
+                            <option value="nombre-asc">Especiales</option>
+                        </select>
+                    </form>
+                </div>
             </div>
 
             <!-- Catálogo -->
-            <section class="productos">
-                <div class="galeria">
-                    <article class="cosplay">
-                        <img src="../images/cosplays/evangelion-rei.jpg" alt="rei-ayanami">
-                        <div class="cosplay__descripcion">
-                            <h3>SEIFUKU <br> EVANGELION</h3>
-                            <h4>$ 6500</h4>
+            <section class="d-flex flex-column align-items-center">
+
+                <div class="row d-flex gap-5 justify-content-center mb-5 text-center">
+
+                    <article class="card col-8 col-sm-4 col-md-3 cosplay">
+                        <img src="../images/cosplays/evangelion-rei.jpg" alt="rei-ayanami" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">SEIFUKU <br> EVANGELION</h3>
+                            <h4 class="card-text">$ 6500</h4>
                         </div>
-    
+
                         <div class="cosplay__carrito">  
                             <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
                             <a href="">
@@ -210,14 +214,14 @@
                             </a>
                         </div>
                     </article>
-    
-                    <article class="cosplay">
-                        <img src="../images/cosplays//jujutsu-nobara.jpg" alt="nobara">
-                        <div class="cosplay__descripcion">
-                            <h3>NOBARA KUGISAKI <br> JUJUTSU KAISEN</h3>
-                            <h4>$ 7000</h4>
+
+                    <article class="card col-8 col-sm-4 col-md-3 cosplay">
+                        <img src="../images/cosplays//jujutsu-nobara.jpg" alt="nobara"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">NOBARA KUGISAKI <br> JUJUTSU KAISEN</h3>
+                            <h4 class="card-text">$ 7000</h4>
                         </div>
-    
+
                         <div class="cosplay__carrito">  
                             <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
                             <a href="">
@@ -225,14 +229,14 @@
                             </a>
                         </div>
                     </article>
-    
-                    <article class="cosplay">
-                        <img src="../images/cosplays/school-girl.jpg" alt="school-girl">
-                        <div class="cosplay__descripcion">
-                            <h3>SEIFUKU TRADICIONAL</h3>
-                            <h4>$ 6000</h4>
+
+                    <article class="card col-8 col-sm-4 col-md-3 cosplay">
+                        <img src="../images/cosplays/school-girl.jpg" alt="school-girl"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">SEIFUKU TRADICIONAL</h3>
+                            <h4 class="card-text">$ 6000</h4>
                         </div>
-    
+
                         <div class="cosplay__carrito">  
                             <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
                             <a href="">
@@ -240,14 +244,14 @@
                             </a>
                         </div>
                     </article>
-    
-                    <article class="cosplay">
-                        <img src="../images/cosplays/shigenki-saco.jpg" alt="shigenki-saco">
-                        <div class="cosplay__descripcion">
-                            <h3>SACO MILITAR <br> SHINGEKI NO KYOJIN</h3>
-                            <h4>$ 9500</h4>
+
+                    <article class="card col-8 col-sm-4 col-md-3 cosplay">
+                        <img src="../images/cosplays/shigenki-saco.jpg" alt="shigenki-saco"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">SACO MILITAR <br> SHINGEKI NO KYOJIN</h3>
+                            <h4 class="card-text">$ 9500</h4>
                         </div>
-    
+
                         <div class="cosplay__carrito">  
                             <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
                             <a href="">
@@ -255,14 +259,14 @@
                             </a>
                         </div>
                     </article>
-    
-                    <article class="cosplay">
-                        <img src="../images/cosplays/shingeki-chaqueta.jpg" alt="shingeki-chaqueta">
-                        <div class="cosplay__descripcion">
-                            <h3>CHAQUETA <br> SHINGEKI NO KYOJIN</h3>
-                            <h4>$4500</h4>
+
+                    <article class="card col-8 col-sm-4 col-md-3 cosplay">
+                        <img src="../images/cosplays/shingeki-chaqueta.jpg" alt="shingeki-chaqueta"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">CHAQUETA <br> SHINGEKI NO KYOJIN</h3>
+                            <h4 class="card-text">$4500</h4>
                         </div>
-    
+
                         <div class="cosplay__carrito">  
                             <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
                             <a href="">
@@ -270,14 +274,14 @@
                             </a>
                         </div>
                     </article>
-    
-                    <article class="cosplay">
-                        <img src="../images/cosplays/ronnie-theBoy.jpg" alt="ronnie">
-                        <div class="cosplay__descripcion">
-                            <h3>RONNIE</h3>
-                            <h4>$ inf</h4>
+
+                    <article class="card col-8 col-sm-4 col-md-3 cosplay">
+                        <img src="../images/cosplays/ronnie-theBoy.jpg" alt="ronnie"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">RONNIE</h3>
+                            <h4 class="card-text">$ inf</h4>
                         </div>
-    
+
                         <div class="cosplay__carrito">  
                             <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
                             <a href="">
@@ -285,13 +289,17 @@
                             </a>
                         </div>                
                     </article>
-    
+
                 </div>
-                
-                <div class="main__boton">
+                    
+                <div class="btn btn-dark col-4 mt-2">
                     <button>Mostrar más</button>
                 </div>
+
             </section>
+
+        </section>
+
     </main>
 
     <!-- FOOTER -->
