@@ -137,30 +137,30 @@
                 el envío a través del siguiente.... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptas libero veniam quis iure sapiente, amet assumenda recusandae perferendis praesentium hic repellendus, nesciunt ipsa nemo necessitatibus facilis consequuntur ex sit.
             </p>
 
-            <div class="cartel__envios">
-                <div class="cartel__envios--up">
-                    <h2>Elegí dónde recibir tus compras</h2>
-
-                    <h5>Podrás ver costos y tiempos de entrega en todo lo que busques.</h5>
-                </div>
-                
-                <div  class="cartel__envios--down">
-                    <form action="">
-                        <div>
-                            <label for="codigo-postal"></label>
-                            <input required type="number" id="codigo-postal" name="codigo-postal" 
-                            placeholder="Ingrese su código postal" >
-                        </div>
-                        
-                        <div class="form__envio--lBtn">
-                            <button>Usar</button>
-                        </div>
-                    </form>
-
-                    <!-- Nota: Esto está afuera del form para que no tome el required, por lo cual al aplicar estilos también hay que tenerlo en cuenta ya que es un bloque aparte del form -->
-                    <a target="_blank" href="https://www.oca.com.ar/Busquedas/CodigosPostales" class="form__envio--rBtn">
-                        <button>No sé mi código</button>
-                    </a>
+            <div class="card">
+                <div class="card-body p-0">
+                    <div class="card-title bg-dark text-white p-3">
+                        <h2>Elegí dónde recibir tus compras</h2>
+    
+                        <h5>Podrás ver costos y tiempos de entrega en todo lo que busques.</h5>
+                    </div>
+                    
+                    <div class=" d-flex flex-column align-items-center gap-1 mb-2">
+                        <form class="form col-8">
+                            <div class="mb-2">
+                                <label class="form-label" for="codigo-postal"></label>
+                                <input required type="number" id="codigo-postal" name="codigo-postal" class="form-control"
+                                placeholder="Ingrese su código postal" >
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary col-5">Usar</button>
+                        </form>
+    
+                        <!-- Nota: Esto está afuera del form para que no tome el required, por lo cual al aplicar estilos también hay que tenerlo en cuenta ya que es un bloque aparte del form -->
+                        <a target="_blank" href="https://www.oca.com.ar/Busquedas/CodigosPostales" class="col-8">
+                            <button class="btn btn-primary col-5">No sé mi código</button>
+                        </a>
+                    </div>
                 </div>
             <div>
                 
