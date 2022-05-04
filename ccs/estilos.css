@@ -47,13 +47,6 @@ img, iframe {
     width: 100%;
 }
 
- /*Se usa para que el contenido de una caja esté en formato columna*/
-.columnBox{    
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .boton--whatsapp {
     color: white;
     font-size: 2.5rem;
