@@ -292,6 +292,44 @@ footer {
 }
 
 /**************************************************************/
+/*                            MAIN                            */
+/**************************************************************/
+/* Se hace un main general con características generales y además un main por cada html para poder modificar si hace falta cada uno, aunque por el momento no se use queda creado para utilizar en un futuro si hace falta. */
+
+.main {         /* Nota: Cree una clase main para poder anexar dos clases para aplicar  propiedades. Si tenía un main con una clase, sólo aplica las propiedades de la clase y no las de la etiqueta. Pero aplicando una clase, aplica ambas. */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+.main__titulo {
+    text-align: center;
+
+    border: solid black;
+    border-width: 2px 0;
+    background-image: url("../images/backgrounds/seccion__titulo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.main__titulo h1 {
+    font-size: 2rem;
+}
+
+.seccion__descripcion {     /*Cada sección tiene su descripción*/
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: large;
+    border: solid black;
+    border-width: 2px 0;
+
+    background-image: url("../images/backgrounds/seccion__descripcion.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/**************************************************************/
 /*                     MAIN PREGUNTAS                         */
 /**************************************************************/
 
@@ -358,71 +396,51 @@ footer {
 }
 
 /**************************************************************/
-/*                            MAIN                            */
+/*                       MAIN INDEX                           */
 /**************************************************************/
-/* Se hace un main general con características generales y además un main por cada html para poder modificar si hace falta cada uno, aunque por el momento no se use queda creado para utilizar en un futuro si hace falta. */
 
-.main {         /* Nota: Cree una clase main para poder anexar dos clases para aplicar  propiedades. Si tenía un main con una clase, sólo aplica las propiedades de la clase y no las de la etiqueta. Pero aplicando una clase, aplica ambas. */
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px; 
-}
-.main__titulo {
-    text-align: center;
-
-    border: solid black;
-    border-width: 2px 0;
-    background-image: url("../images/backgrounds/seccion__titulo.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.main__titulo h1 {
-    font-size: 2rem;
-}
-
-.main__seccion {    /* Por defecto las secciones tienen esta configuración*/
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    gap: 10px;
-}
-
-.seccion__descripcion {     /*Cada sección tiene su descripción*/
-    padding: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: large;
-    border: solid black;
-    border-width: 2px 0;
-
-    background-image: url("../images/backgrounds/seccion__descripcion.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-
-/*-------------------------------------Index------------------------------------------*/
+/* Estilos y animaciones */
 .cosplay {
-    text-align: center;
-    margin: 30px;
-    padding: 10px;   
+    position: relative;
+    background-image: url("../images/backgrounds/cosplay.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    transition: all .5s;
 }
 
-.cosplay img{
-    object-fit: cover;
+.cosplay:hover {
+    transform: scale(1.1);
 }
 
-.cosplay__descripcion {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.cosplay i {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    padding: 5px;
+    font-size: 1.5rem;
+    background-color:#E3A077;
+    color: #FCF1EE;
+
+    opacity: 0;
+    transition: all .5s;
+}
+
+.cosplay:hover i {
+    opacity: 1;
+}
+
+/* Media queries */
+/*Para que aparezca el carrito en versiones mobile*/
+@media screen and (max-width: 992px){  
+    .cosplay i{
+        opacity: 1;
+    }
+
+    .cosplay:hover {
+        transform: scale(1); /*Para anular el hover*/
+    }
 }
 
 
