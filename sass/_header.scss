@@ -1,3 +1,61 @@
-header {
-    background-color: blueviolet;
+/* Estilos */
+.header {
+    background-color: #F7F7F7;
+
+    // Buscador
+    &__buscador {
+        height: 20%;
+    }
+
+    // Logo
+    &__logo {
+        &:hover {
+            animation: rotate-in-center .9s both;
+        }
+    }
+
+    // Opciones de cuenta
+    &__cuenta {
+        font-size: 0.9rem;
+
+        a{
+            position: relative;
+
+            &::after {
+                content: "";
+                height: 1px;
+                width: 0;
+                background-color: $color-primary-focus;
+            
+                position: absolute;
+                left: 0;
+                bottom: 10%;
+            
+                transition: 0.3s;
+            }
+
+            &:hover {
+                color: $color-primary-focus;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // Nav
+}
+
+
+
+
+
+
+/* Nav */
+.header__nav li:hover{
+    zoom: 140%;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+    transition: all 3s;
 }
