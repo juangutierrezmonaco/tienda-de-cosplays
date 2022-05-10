@@ -72,9 +72,14 @@
 
             outline: none;
 
-            * {
+            > * {
                 height: 100%;
+                font-size: 1rem;
                 @extend .flexFullCenter;
+
+                &:hover {
+                    color: white;
+                }
             }
         }
     }
@@ -83,11 +88,11 @@
 // Responsive
 @media screen and (max-width: 768px) {
     body {
-        padding-bottom: 16vh;
+        padding-bottom: 20vh;
     }
 
     .header__nav {
-        height: 16vh;
+        min-height: 16vh;
         background: none;
         background-color: blueviolet;
 
