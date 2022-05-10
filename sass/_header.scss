@@ -69,17 +69,19 @@
 
         &__item {
             height: 12vh;
-
+            border: none;
             outline: none;
+            display: flex;
+            align-items: center;
 
             > * {
                 height: 100%;
-                font-size: 1rem;
+                font-size: 2rem;
                 @extend .flexFullCenter;
+            }
 
-                &:hover {
-                    color: white;
-                }
+            &:hover {
+                color: white;
             }
         }
     }
@@ -99,5 +101,20 @@
         position: fixed;
         bottom: 0;
         z-index: 1000;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__nav {
+        &__item {
+
+            > * {
+                font-size: 1.1rem;
+            }
+        }
+
+        img {
+            height: 60%;
+        }
     }
 }
