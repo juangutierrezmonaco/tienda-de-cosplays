@@ -1,3 +1,8 @@
+// Borrar 
+.r {
+    background-color: blue;
+}
+
 // Estilos
 *{
     padding: 0;
@@ -8,46 +13,6 @@
 
 body > *{
     background-color: #F7F7F7;
-}
-
-// Botón WhatsApp
-.boton--whatsapp {
-    color: white;
-    font-size: 2.5rem;
-    background-color: #43CC51;
-    border-radius: 100%;
-
-    height: 60px;
-    width: 60px;
-
-    position: fixed;
-    top: auto;
-    bottom: 20px;
-    right: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-// Botón para hacer un scroll up
-.boton--goUp {
-    color: white;
-    font-size: 2rem;
-    background-color:#E60686;
-    border-radius: 100%;
-
-    height: 40px;
-    width: 40px;
-
-    position: fixed;
-    top: auto;
-    bottom: 20px;
-    right: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .flexFullCenter {
@@ -95,10 +60,54 @@ ul {
 ::selection {
     color: white;
     background-color: $color-danger;
+}
 
-  }
 
-// Borrar 
-.r {
-    background-color: blue;
+// Elementos
+
+// Botón WhatsApp
+.boton--whatsapp {
+    color: white;
+    font-size: 2.5rem;
+    background-color: #43CC51;
+    border-radius: 100%;
+
+    height: 60px;
+    width: 60px;
+
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Botón para hacer un scroll up
+.boton--goUp {
+    color: white;
+    font-size: 2rem;
+    background-color:#E60686;
+    border-radius: 100%;
+
+    height: 40px;
+    width: 40px;
+
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Resposive {
+@media screen and (max-width: 768px) {
+    body {
+        padding-bottom: 15vh;
+    }
 }
