@@ -6,6 +6,10 @@
     font-family: 'Akshar', sans-serif;
 }
 
+body > *{
+    background-color: #F7F7F7;
+}
+
 // Botón WhatsApp
 .boton--whatsapp {
     color: white;
@@ -53,8 +57,8 @@
 }
 
 .form-control:focus {
-    border: solid 1px #E60686;
-    box-shadow: #E60686 0px 0px 15px;
+    border: solid 1px $color-primary-focus;
+    box-shadow: $color-primary-focus 0px 0px 15px;
 }
 
 // Botones
@@ -88,3 +92,13 @@ ul {
     list-style: none;
 }
 
+::selection {
+    color: white;
+    background-color: $color-danger;
+
+  }
+
+// Borrar 
+.r {
+    background-color: blue;
+}

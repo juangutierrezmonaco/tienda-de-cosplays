@@ -1,7 +1,5 @@
 /* Estilos */
 .header {
-    background-color: #F7F7F7;
-
     // Buscador
     &__buscador {
         height: 20%;
@@ -43,19 +41,58 @@
             }
         }
     }
-
+    
     // Nav
+    &__nav {
+        text-transform: uppercase;
+        background: linear-gradient(338deg, rgba(89,110,141,1) 
+        0%, rgba(223,208,231,1) 35%, rgba(225,250,237,1) 100%); 
+        border: solid rgb(164, 160, 160);
+        border-width: 1px 0;
+
+        .nav-link{
+            color: black;
+            height: 100%;
+
+            &:hover {
+                color: white;
+                background-color: $color-primary;
+            }
+        }
+
+        .activo {
+            color: white;
+            background-color: $color-primary;
+            border: solid 1px black;
+            @extend .shadow-pop-bl;
+        }
+
+        &__item {
+            height: 12vh;
+
+            outline: none;
+
+            * {
+                height: 100%;
+                @extend .flexFullCenter;
+            }
+        }
+    }
 }
 
+// Responsive
+@media screen and (max-width: 768px) {
+    body {
+        padding-bottom: 16vh;
+    }
 
+    .header__nav {
+        height: 16vh;
+        background: none;
+        background-color: blueviolet;
 
-
-
-
-/* Nav */
-.header__nav li:hover{
-    zoom: 140%;
-    border-bottom: solid 1px;
-    border-top: solid 1px;
-    transition: all 3s;
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+    }
 }
