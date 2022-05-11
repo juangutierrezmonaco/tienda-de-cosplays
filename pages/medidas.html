@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ORA ORA COSTUME</title>
 
+    <!-- Icono pestaña navegador -->
+    <link rel="shortcut icon" href="../assets/images/logo.jfif">
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    
     <!-- CSS -->
-    <link rel="stylesheet" href="../ccs/estilos.css">
+    <link rel="stylesheet" href="../css/style.min.css">
+    
+    <!-- Font Awesome - Icons -->
+    <script src="https://kit.fontawesome.com/d78df47158.js" crossorigin="anonymous"></script>
 
     <!-- Google Fonts - Roboto (Toda la familia)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,50 +30,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome - Icons -->
-    <script src="https://kit.fontawesome.com/d78df47158.js" crossorigin="anonymous"></script>
-
-    <!-- Icono pestaña navegador -->
-    <link rel="shortcut icon" href="../images/logo.jfif">
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header>
+    <header class="container-md header">
 
         <!-- Parte superior del header -->
-        <div class="d-none d-md-flex row mb-3">
+        <div class="row m-0 mb-3 d-none d-md-flex">
 
             <!-- Buscador -->
-            <div class="col-4 d-flex justify-content-center align-items-center">
-                <div class="input-group header__buscador px-lg-3">
+            <div class="col-4 flexFullCenter">
+                <form class="input-group px-lg-3 header__buscador">
+                    
                     <input type="text" class="form-control" placeholder="Buscar..." id="buscador">
-                    <a class="btn btn-info text-white" type="button">
+
+                    <button class="btn btn-primary" type="button">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </div>
+                    </button>
+                </form>
             </div>
 
             <!-- Logo -->
-            <a href="../index.html" class="col-4 d-flex justify-content-center align-items-center header__logo">
-                <img src="../images/logo.jfif" alt="logo" class="img-fluid rounded-circle col-lg-10">
-            </a>
+            <div class="col-4">
+                <a href="../index.html" class="flexFullCenter">
+                    <img src="../assets/images/logo.jfif" alt="oraOraCostume-logo" class="img-fluid col-lg-10 rounded-circle header__logo">
+                </a>
+            </div>
 
             <!-- Carrito y opciones de usuario -->
-            <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="col-4 flexFullCenter">
 
                 <div class="col-12 col-lg-9">
 
                     <div class="p-0 header__carrito mb-1">
-                        <button type="button" class="btn btn-primary rounded-0 w-100 text-white fs-4">
+                        <button type="button" class="btn btn-primary rounded-0 w-100 text-white fs-5">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span>CARRITO (0) $0</span>
                         </button>
                     </div>
                     
-                    <div class="d-flex justify-content-evenly" id="accountOptions">
+                    <div class="d-flex justify-content-evenly header__cuenta">
                         <a href="">CREAR CUENTA</a>
                         <span>|</span>
                         <a href="">INICIAR SESIÓN</a>
@@ -75,233 +79,129 @@
                 </div> 
             </div>
         </div>
-
+        
         <!-- Navbar -->
         <div class="row">
-            <nav class="navbar navbar-light navbar-expand-md p-0 border-top border-bottom">
-                <div class="container-fluid text-uppercase p-md-0 ">
+            <nav class="navbar navbar-expand-md navbar-light p-md-0 header__nav">
+                
+                <!-- Logo -->
+                <a class="navbar-toggler header__nav__item" href="../index.html">
+                    <img src="../assets/images/logo.jfif" alt="oraOraCostume-logo" class="rounded-circle img-fluid">
+                </a>
+        
+                <!-- Buscador -->
+                <button class="navbar-toggler header__nav__item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
 
-                    <a class="navbar-toggler header__box" href="../index.html" >
-                        <img src="../images/logo.jfif" alt="logo" class="rounded-circle">
-                    </a>
+                <!-- Carrito -->
+                <button class="navbar-toggler header__nav__item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
 
-                    <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse" data-bs-target="#buscador" aria-controls="buscador" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                <!-- WhatsApp -->
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!" class="navbar-toggler header__nav__item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
 
-                    <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                    </button>
+                <!-- Opciones de usuario -->
+                <button class="navbar-toggler header__nav__item">
+                    <i class="fa-regular fa-user"></i>
+                </button>
 
-
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!" class="navbar-toggler header__box">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-
-                    <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse" data-bs-target="#accountOptions" aria-controls="accountOptions" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-regular fa-user"></i>
-                    </button>
-
-
-                    <button class="navbar-toggler header__box" type="button" data-bs-toggle="collapse" data-bs-target="#header__nav" aria-controls="header__nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse fs-4" id="header__nav">
-                        <ul class="nav nav-pills nav-fill me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-evenly">
-                            <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
-                            <li class="nav-item"><a href="tienda.html" class="nav-link">Tienda</a></li>
-                            <li class="nav-item"><a href="medidas.html" class="nav-link active rounded-0">Medidas</a></li>
-                            <li class="nav-item"><a href="envios.html" class="nav-link">Envios</a></li>
-                            <li class="nav-item"><a href="preguntas.html" class="nav-link">Preguntas</a></li>
-                            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
-                        </ul>
-                        
-                    </div>
-
+                <!-- Icono de hamburguesa -->
+                <button class="navbar-toggler header__nav__item" type="button" data-bs-toggle="collapse" data-bs-target="#header__nav__ul" aria-controls="header__nav__ul" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse fs-4" id="header__nav__ul">
+                    <ul class="nav nav-pills nav-fill w-100 d-md-flex justify-content-evenly flex-column flex-md-row p-md-0 py-5">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="./tienda.html" class="nav-link">Tienda</a></li>
+                        <li class="nav-item"><a href="./medidas.html" class="nav-link activo">Medidas</a></li>
+                        <li class="nav-item"><a href="./envios.html" class="nav-link">Envios</a></li>
+                        <li class="nav-item"><a href="./preguntas.html" class="nav-link">Preguntas</a></li>
+                        <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>                    
                 </div>
-              </nav>
+            </nav>
         </div>
 
     </header>
 
-    <!-- MAIN -->
-    <main class="main main--medidas">
-        <div class="main__titulo p-5">
-            <h1 class="bounce-top">MEDIDAS</h1>
-        </div>
-
-        <!-- Aclaraciones antes de comenzar -->
-        <section class="seccion__descripcion p-2">
-            <h2>Aclaraciones previas</h2>
-            <p>
-                <em>Recomendamos anotar las medias en una hoja y luego cargarlas.</em>
-            </p>
-
-            <p>
-                <em>Si por error se cierre la aplicación, se <strong>perderán</strong> 
-                las medidas ya cargadas</em>
-            </p>    
-
-            <p>
-                Todas las medidas deben expresarse en <strong>CENTÍMETROS</strong>.
-            </p>
-        </section>
-
-        <!-- Como tomar las N medidas -->
-        <section class="d-flex flex-column align-items-center">     
-               
-            <div class="row d-flex gap-5 justify-content-center mb-5 text-center">
-                <div class="card col-8 col-sm-4 col-md-3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TZzaGHdcCZ0" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-top"> 
-                    </iframe>
-                    <div class="card-body">
-                        <span class="card-title">Contorno de cuello</span>
-                    </div>
-                </div>
-                
-                <div class="card col-8 col-sm-4 col-md-3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MC_mGKA8z_I" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-top">
-                    </iframe>
-                    <div class="card-body">
-                        <span>Ancho de hombro</span>
-                    </div>
-                </div>
-                
-                <div class="card col-8 col-sm-4 col-md-3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bgh9mdepiKI" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-top">
-                    </iframe>
-                    <div class="card-body">
-                        <span>Contorno de cintura</span>
-                    </div>
-                </div>
-                
-                <div class="card col-8 col-sm-4 col-md-3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bZFsfsP6eg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-top"></iframe>
-                    <div class="card-body">
-                        <span>Ancho de espalda</span>
-                    </div>
-                </div>
-                
-                <div class="card col-8 col-sm-4 col-md-3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OM1PGABODys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-top"></iframe>
-                    <div class="card-body">
-                        <span>Contorno de pecho</span>
-                    </div>
-                </div>
-                
-                <div class="card col-8 col-sm-4 col-md-3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/B24TUok7g2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-top"></iframe>
-                    <div class="card-body">
-                        <span>Altura de tiro</span>
-                    </div>
-                </div>
-    
-                <!-- Y así hasta tener todas las medidas, luego: -->
-            </div>
-            
-        </section>
-
-        <!-- Sección donde se completan datos -->
-        <section class="row">
-
-            <h3 class="seccion__descripcion">
-                Por último completa este formulario para terminar de completar los datos del cosplay que necesitas!
-            </h3>
-
-            <form class="form" action="">
-
-                <div class="form-group">
-                    <label for="nombre-cosplay" class="form-label mb-0">Nombre del cosplay</label>
-                    <input required type="text" id="nombre-cosplay" name="nombre-cosplay" class="form-control mb-3">
-                </div>
-
-                <div class="form__group">
-                    <label for="edad" class="form-label mb-0">Edad (de quien usa el cosplay/ Vestido/ Disfraz)</label>
-                    <input required type="number" id="edad" name="edad" class="form-control mb-3">
-                </div>
-
-                <div class="form__group">
-                    <label for="nombre" class="form-label mb-0">Nombre y apellido</label>
-                    <input required type="text" id="nombre" name="nombre" class="form-control mb-3">
-                </div>
-
-                <div class="form__group">
-                    <label for="celular" class="form-label mb-0">Celular</label>
-                    <input required type="number" id="celular" nombre="celular" class="form-control mb-3">
-                </div>
-
-                <div class="form__group">
-                    <label for="comentario" class="form-label mb-0">Otras medidas o info a tener en cuenta (Ej: Largo de pollera, Largo pantalón corto, etc):</label>
-                    <textarea name="comentario" id="comentario" rows="5" class="form-control mb-3"></textarea>
-                </div>
-
-                <div class="mt-3 d-flex justify-content-center">
-                    <button type="submit" class="btn btn-dark fs-3 py-3 px-5">
-                        Enviar
-                    </button>
-                </div>
-                
-            </form>
-
-        </section>
-
+    <main class="container p-0 main mt-3 mb-4">
+        <h1>Seccion en progreso</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, facere accusamus consectetur quidem architecto ad voluptas totam praesentium alias numquam laborum, possimus voluptatum fugiat amet vel maiores, eius autem labore.
+        Dicta quas libero eligendi id nisi dolore totam similique amet numquam. Non libero modi distinctio exercitationem iusto hic nulla dolores temporibus. Impedit saepe nesciunt atque reiciendis, pariatur maiores error eum.
+        Molestias nihil expedita praesentium libero? Nemo mollitia deleniti unde tenetur cumque, est soluta. Ducimus nemo hic ullam. Deserunt doloremque quidem, autem ipsum, illo iusto quaerat minima quod, totam itaque perferendis.
+        Velit minus repellat atque ab eveniet blanditiis excepturi. Quibusdam, reiciendis! Earum molestias harum voluptate, sed odio quis totam quam, facere blanditiis delectus exercitationem reprehenderit voluptatem numquam incidunt praesentium temporibus excepturi!
+        Blanditiis sit excepturi voluptatem, mollitia aspernatur veritatis eos modi assumenda dolorem maxime quaerat id non eius fugit voluptas ullam alias, harum nesciunt libero enim repudiandae fugiat quibusdam consequuntur! Soluta, sit!
+        Magni quidem maxime cum commodi. Omnis, dolor quibusdam, beatae quo et dolores ullam ea eum ad, laboriosam doloremque similique dolore obcaecati excepturi nobis minima. Vero dicta unde rerum accusantium aspernatur?
+        Modi repellat doloribus accusamus laboriosam dolores totam officia quia in cupiditate illo sequi distinctio nostrum necessitatibus exercitationem maiores officiis dolorem et, ut autem numquam rerum. Dolores dicta enim saepe deserunt!
+        Laudantium, esse. Facere rerum dolor incidunt et reiciendis animi, assumenda eos totam harum minima quas ex! Magnam omnis cum debitis consequatur ex. Nihil repellendus quos odio, consequuntur ex ut eum.
+        Architecto quis fuga voluptas maiores aspernatur ut fugiat deleniti rerum similique recusandae nemo quisquam exercitationem dolorum dicta debitis minima commodi, aliquam voluptatum. Illum fuga debitis itaque assumenda voluptas ipsum est.
+        Eligendi error earum, rem odit, perspiciatis soluta facere laudantium nostrum dolore in totam, quod atque assumenda labore laboriosam dolor natus fugit exercitationem unde? Repellat saepe ipsam neque mollitia, quam impedit?
+        Quibusdam ipsa fugit voluptate voluptatem odit, dignissimos ut esse alias non obcaecati consequuntur ratione ex tempora nobis nam sit quam cum accusamus culpa architecto! A est temporibus fuga quasi cumque.
+        Nostrum tempora repellat nisi eveniet dolorum eum modi numquam fugit sed in? Eveniet quo dolor beatae reprehenderit excepturi cumque, quod veniam! Consequuntur laudantium illum deleniti? Provident eveniet ipsa corporis iste!
+        Consequatur autem voluptatem dolores odio quidem voluptates molestiae, numquam laborum nemo omnis perferendis dignissimos cumque sint nihil eius unde tempora? Fugit quae ullam corrupti, repellendus molestiae eius consequuntur officiis maxime.
+        Et, iure praesentium quibusdam sint sapiente facilis itaque assumenda tenetur repudiandae corrupti aliquam id dignissimos veritatis, nihil aliquid atque asperiores aspernatur, architecto sequi eum esse non est maxime? Eligendi, obcaecati.
+        Error delectus commodi fugit odio consectetur tempore nulla autem voluptas quae! Praesentium aliquid officia fugit cumque cupiditate? Modi nam rerum magnam nostrum, exercitationem quo possimus doloremque. Id eveniet corporis reiciendis.
+        Enim perspiciatis quibusdam exercitationem magnam, quidem fugiat nemo amet consequuntur nobis. Voluptates praesentium reiciendis, nihil consequuntur fuga nulla id tempora ratione accusamus odit molestias illo ex voluptate suscipit veritatis expedita.
+        Facere, ea beatae dolorem laborum, alias ratione enim aperiam, debitis eum numquam nam quas! Temporibus voluptate ab beatae. Inventore dignissimos impedit sint blanditiis, distinctio dolorum? Tenetur totam cum suscipit magnam?
+        Amet mollitia praesentium obcaecati sequi optio facilis. Deserunt, ex! Necessitatibus nesciunt magni in rerum id error alias ducimus itaque labore architecto nobis dicta, aliquid exercitationem fugiat! Totam ab nostrum iste!
+        Quidem a corporis at aut corrupti magnam, nemo recusandae repudiandae vel natus veniam nostrum quaerat magni nesciunt quo quibusdam autem rem doloribus, quas quasi fugiat distinctio, blanditiis minus. Ratione, optio!
+        Architecto labore dignissimos voluptas ut, iusto nostrum doloremque corrupti voluptatem eos, velit illo iure? Odit id cupiditate assumenda voluptas modi suscipit? Itaque impedit illo facilis non voluptate explicabo enim tempore!</p>
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="row p-2 g-5">
+    <footer class="container-fluid pt-4 footer">
+        <div class="row justify-content-md-evenly gap-2">
+
             <!-- Navegación -->
-            <div class="footer__nav col-6 col-sm-3">
+            <div class="col-12 col-sm-6 col-md-3 footer__nav">
                 <h3>NAVEGACIÓN</h3>
-                <ul>
+                <ul class="p-0">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="tienda.html">Tienda</a></li>
-                    <li><a href="medidas.html">Medidas</a></li>
-                    <li><a href="envios.html">Envios</a></li>
-                    <li><a href="preguntas.html">Preguntas</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="./tienda.html">Tienda</a></li>
+                    <li><a href="./medidas.html">Medidas</a></li>
+                    <li><a href="./envios.html">Envios</a></li>
+                    <li><a href="./preguntas.html">Preguntas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </div>
-        
+
             <!-- MEDIOS DE PAGO Y ENVIOS-->
-            <div class="col-6 col-sm-3">
-                <div class="row footer__pagos">
+            <div class="row col-md-3">
+                <div class="col-6 col-md-12 footer__pagosEnvios">
                     <h3>MEDIOS DE PAGO</h3>
                     <ul>
-                        <li><img src="../images/pagos/visa.png" alt="visa"></li>
-                        <li><img src="../images/pagos/mastercard@2x.png" alt="master"></li>
-                        <li><img src="../images/pagos/tarjeta-naranja@2x.png" alt="naranja"></li>
-                        <li><img src="../images/pagos/mercadopago@2x.png" alt="mp"></li>
-                        <li><img src="../images/pagos/pagofacil@2x.png" alt="pf"></li>
-                        <li><img src="../images/pagos/rapipago@2x.png" alt="rp"></li>
+                        <li><img src="../assets/images/pagos/visa.png" alt="visa"></li>
+                        <li><img src="../assets/images/pagos/mastercard@2x.png" alt="master"></li>
+                        <li><img src="../assets/images/pagos/tarjeta-naranja@2x.png" alt="naranja"></li>
+                        <li><img src="../assets/images/pagos/mercadopago@2x.png" alt="mp"></li>
+                        <li><img src="../assets/images/pagos/pagofacil@2x.png" alt="pf"></li>
+                        <li><img src="../assets/images/pagos/rapipago@2x.png" alt="rp"></li>
                     </ul>
                 </div>
             
-                <div class="row footer__envios">
+                <div class="col-6 col-md-12 footer__pagosEnvios">
                     <h3>ENVÍOS</h3>
                     <ul>
-                        <li><img src="../images/envio/mercado-envios@2x.png" alt="me"></li>
-                        <li><img src="../images/envio/andreani.png" alt="andreani"></li>
-                        <li><img src="../images/envio/oca.png" alt="oca"></li>
-                        <li><img src="../images/envio/Logo-Correo-Argentino-3-1200x675.png" alt="ca"></li>
+                        <li><img src="../assets/images/envio/mercado-envios@2x.png" alt="me"></li>
+                        <li><img src="../assets/images/envio/andreani.png" alt="andreani"></li>
+                        <li><img src="../assets/images/envio/oca.png" alt="oca"></li>
+                        <li><img src="../assets/images/envio/Logo-Correo-Argentino-3-1200x675.png" alt="ca"></li>
                     </ul>
                 </div>
             </div>
 
             <!-- NEWSLETTER Y REDES-->
-            <div class="col-6 col-sm-3">
+            <div class="row col-md-3">
 
                 <!-- NEWSLETTER -->
-                <div class="row mb-3">
+                <div class="col-6 col-md-12  mb-4">
                     <h3>NEWSLETTER</h3>
-                    <div class="input-group px-lg-3">
+                    <div class="input-group">
                         <input type="text" class="form-control" placeholder="Mail..." id="newsletter">
                         <button class="btn btn-dark text-white">
                             <i class="fa-solid fa-paper-plane"></i>
@@ -310,9 +210,9 @@
                 </div>
 
                 <!-- REDES -->
-                <nav class="row">
+                <nav class="col-6 col-md-12 ">
                     <h3>REDES</h3>
-                    <ul class="footer__redes">
+                    <ul class="footer__redes p-0">
                         <li>
                             <a target="_blank" href="https://www.instagram.com/">
                                 <i class="fa-brands fa-instagram"></i>
@@ -331,12 +231,11 @@
                     </ul>
                 </nav>
             </div>
-            
+
             <!-- LOGO -->
-            <div class="col-6 col-sm-3 d-flex justify-content-center">
-                <a href="#" class="footer__logo">
-                    <img src="../images/logo.jfif" alt="logo">
-                    <span class="text-center">IR ARRIBA!</span>
+            <div class="col-5 col-md-3 footer__logo d-none d-md-flex justify-content-center">
+                <a href="#">
+                    <img src="../assets/images/logo.jfif" alt="logo">
                 </a>
             </div>
 
@@ -344,20 +243,21 @@
 
         <!-- DERECHOS RESERVADOS -->
         <div class="row footer__legales">
-            <p class=" d-flex justify-content-end px-5 py-1">
-                Todos los derechos reservados <span>®</span>
+            <p class="d-flex justify-content-center gap-2">
+                <span>Todos los derechos reservados</span>
+                <i class="fa-solid fa-registered"></i>
             </p>
         </div>
         
     </footer>
     
     <!-- Botón fijo de WhatsApp -->
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!" class="boton--whatsapp d-none d-md-flex">
-                    <i class="fa-brands fa-whatsapp"></i>
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=2236690005&text=Hola necesito más información!" class="boton__fijo boton__fijo--whatsApp d-none d-md-flex">
+        <i class="fa-brands fa-whatsapp"></i>
     </a>
 
     <!-- Botón fijo para ir arribar en version mobile -->
-    <a href="#" class="boton--goUp d-md-none">
+    <a href="#" class="boton__fijo boton__fijo--goUp d-md-none">
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 
