@@ -1,4 +1,4 @@
-/* Estilos */
+/**     Estilos    **/
 .header {
     // Buscador
     &__buscador {
@@ -87,7 +87,7 @@
     }
 }
 
-// Responsive
+/**     Responsive    **/
 @media screen and (max-width: 768px) {
     .header__nav {
         min-height: 16vh;

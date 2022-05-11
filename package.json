@@ -1,7 +1,7 @@
 {
   "name": "oraora-costume",
   "version": "1.0.0",
-  "description": "",
+  "description": "Emprendimiento de venta de cosplays",
   "main": "index.js",
   "scripts": {
     "start": "sass ./style.scss ./css/style.min.css -w --no-source-map -s compressed"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/juangutierrezmonaco/mi-repositorio.git"
   },
-  "author": "",
+  "author": "Juan Manuel Gutierrez Monaco",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/juangutierrezmonaco/mi-repositorio/issues"
