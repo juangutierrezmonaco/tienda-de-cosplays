@@ -1,0 +1,45 @@
+/**     Estilos    **/
+.cosplay {
+    position: relative;
+    background-image: url("../assets/images/backgrounds/cosplay.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all .5s;
+
+    i {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    
+        padding: 5px;
+        font-size: 1.5rem;
+        background-color:#E3A077;
+        color: #FCF1EE;
+    
+        opacity: 0;
+        transition: all .5s;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+
+        i {
+            opacity: 1;
+        }
+    }
+}
+
+/**     Responsive    **/
+@media screen and (max-width: 992px){   
+    /*Para que aparezca el carrito en versiones mobile y tablet*/
+    .cosplay{
+        i {
+            opacity: 1;
+
+            &:hover {
+                transform: scale(1); /*Para anular el hover*/
+            }
+        }
+    }
+}
