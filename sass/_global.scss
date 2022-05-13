@@ -77,11 +77,25 @@ body{
 
         transition: all .5s;
 
+        &::after {
+            font-family: "Font Awesome 5 Free";
+            content: " \f061";
+            display: none;
+            padding-right: 3px;
+            vertical-align: middle;
+            font-weight: 900;
+        }
+
         &:hover {
             background-color: $color-danger;
             color: antiquewhite;
             filter:contrast(1.5);
             transform: scale(1.2);
+
+            &::after {
+                margin-left:10px;
+                display: inline-block;
+            }
         }
     }
 }
