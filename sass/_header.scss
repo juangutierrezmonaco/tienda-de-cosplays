@@ -70,13 +70,17 @@
         &__item {
             height: 12vh;
             border: none;
-            outline: none;
+            outline: none;  
             display: flex;
-            align-items: center;    
+            align-items: center;  
 
             > * {
                 height: 100%;
                 font-size: 2rem;
+                @extend .flexFullCenter;
+            }
+
+            i {     //Si no se creaba un bug con los iconos a veces
                 @extend .flexFullCenter;
             }
 

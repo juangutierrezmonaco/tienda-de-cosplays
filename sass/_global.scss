@@ -63,6 +63,17 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        &__descripcion {
+            text-align: center;
+            border: solid black;
+            border-width: 2px 0;
+            margin-bottom: 50px;
+        
+            background-image: url("../assets/images/backgrounds/seccion__descripcion.jpg");
+            background-size: cover;
+            background-position: center;
+        }
     }
 
     &__boton {      /* Estilo para algunos botones en los main */
