@@ -1,0 +1,41 @@
+
+/*-------------------------------------Preguntas--------------------------------------*/
+.pregunta {
+    color: black;
+    width: 80%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: center;
+}
+
+.pregunta__titulo {
+    font-style: oblique;
+    border: solid black;
+    border-width: 2px 0;
+    padding: 10px;
+} 
+
+/* Por ahora no tiene muchos estilos pero lo dejo preparado para después */
+.pregunta__respuesta {
+    padding: 5px;
+}
+
+.preguntas__contacto {
+    padding: 20px;
+    border: solid black;
+    border-width: 2px 0;
+    align-self: center;
+    gap: 20px;
+}
+
+.preguntas__contacto a span{ 
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase; 
+
+    padding: 10px;
+    border-width: 2px;
+}
