@@ -3,5 +3,13 @@
 @import './sass/global';
 @import './sass/header';
 @import './sass/footer';
+
 @import './sass/index';
 @import './sass/contacto';
+@import './sass/preguntas';
+
+//BORRAR
+.b {
+    background-color: $color-info;
+    color: black;
+}

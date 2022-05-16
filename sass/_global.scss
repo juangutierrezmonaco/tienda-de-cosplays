@@ -59,23 +59,23 @@ body{
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     }
 
+    &__descripcion {
+        text-align: center;
+        border: solid black;
+        border-width: 2px 0;
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 50px;
+    
+        background-image: url("../assets/images/backgrounds/seccion__descripcion.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
     &__seccion {
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        &__descripcion {
-            text-align: center;
-            border: solid black;
-            border-width: 2px 0;
-            margin-bottom: 50px;
-            width: 100%;
-            padding: 50px;
-        
-            background-image: url("../assets/images/backgrounds/seccion__descripcion.jpg");
-            background-size: cover;
-            background-position: center;
-        }
     }
 
     &__boton {      /* Estilo para algunos botones en los main */
@@ -98,6 +98,8 @@ body{
         }
 
         &--go {     //Si el botón direcciona a alguna parte
+            transition: all .5s;
+
             &::after {
                 font-family: "Font Awesome 5 Free";
                 content: " \f061";
@@ -105,6 +107,7 @@ body{
                 padding-right: 3px;
                 vertical-align: middle;
                 font-weight: 900;
+                transition: all .5s;
             }
 
             &:hover {
@@ -130,6 +133,22 @@ body{
     &:focus {
         background-color: $color-primary-focus;
         box-shadow: $color-primary-focus 0px 0px 10px;
+    }
+}
+
+.btn-danger {
+    color: white;
+    background-color: $color-danger;
+    border: none;
+
+    &:hover {
+        color: white;
+        background-color: $color-danger-hover;
+    }
+
+    &:focus {
+        background-color: $color-danger-focus;
+        box-shadow: $color-danger-focus 0px 0px 10px;
     }
 }
 
