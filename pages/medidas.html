@@ -130,130 +130,1035 @@
     </header>
 
     <!-- MAIN -->
-    <main class="main main--medidas">
-        <div class="main__titulo p-5">
+    <main class="container p-0 mt-3 mb-4 main main--medidas">
+        <div class="main__titulo p-4">
             <h1 class="bounce-top">MEDIDAS</h1>
         </div>
 
-        <!-- Aclaraciones antes de comenzar -->
-        <section class="seccion__descripcion p-2">
+        <div class="main__descripcion">
             <h2>Aclaraciones previas</h2>
-            <p>
+            <p class="fs-5 m-0">
                 <em>Recomendamos anotar las medias en una hoja y luego cargarlas.</em>
             </p>
 
-            <p>
-                <em>Si por error se cierre la aplicación, se <strong>perderán</strong> 
+            <p class="fs-5 m-0">
+                <em>Si por error se cierre la página, se <strong>perderán</strong> 
                 las medidas ya cargadas</em>
             </p>    
 
-            <p>
+            <p class="fs-5 m-0">
                 Todas las medidas deben expresarse en <strong>CENTÍMETROS</strong>.
             </p>
-        </section>
+        </div>
+
+        <div class="main__seccion row mb-3">
+            <h5 class="col-10 mb-3 text-decoration-underline">Antes de empezar anudamos una cinta, cordón o elástico en la cintura ( LA CINTURA ES LA PARTE MAS ESTRECHA DEL TORSO).</h5>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mKlpgNBBj98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-8"></iframe>
+        </div>
+
+        
 
         <!-- Como tomar las N medidas -->
-        <section class="d-flex flex-column align-items-center">     
+        <section class="main__seccion">   
+            <div class="row mb-5 bg-dark text-white">
+                <p class="lead text-center">Acá abajo podés ver cómo tomar TODAS las medidas que necesitas y las podés completar también, haciendo click en cada una. O sino, podés llenar la <a target="_blank" href="../assets/images/medidas/tabla-de-talles.png" class="bg-white text-dark">tabla de talles completa</a> y enviárnosla. Recordá que todos nuestros medios de comunicación se hallan en <a href="./contacto.html" class="btn-danger main__boton--go p-1">CONTACTO</a>
+                </p> 
+            </div>  
                
             <div class="row d-flex gap-5 justify-content-center mb-5 text-center">
-                <div class="card col-8 col-sm-4 col-md-3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TZzaGHdcCZ0" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-top"> 
-                    </iframe>
-                    <div class="card-body">
-                        <span class="card-title">Contorno de cuello</span>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida1">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Contorno de Cabeza</h2>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="card col-8 col-sm-4 col-md-3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MC_mGKA8z_I" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-top">
-                    </iframe>
-                    <div class="card-body">
-                        <span>Ancho de hombro</span>
+
+                    <div class="modal fade" id="medida1" tabindex="-1" aria-labelledby="medida1Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida1Label">Contorno de Cabeza</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img src="https://ss-static-01.esmsv.com/id/79166/galeriaimagenes/obtenerimagen/?id=19&tipoEscala=stretch&width=863&height=480" class="container">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-                
-                <div class="card col-8 col-sm-4 col-md-3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bgh9mdepiKI" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-top">
-                    </iframe>
-                    <div class="card-body">
-                        <span>Contorno de cintura</span>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida2">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Contorno de Cuello</h2>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="card col-8 col-sm-4 col-md-3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bZFsfsP6eg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-top"></iframe>
-                    <div class="card-body">
-                        <span>Ancho de espalda</span>
+
+                    <div class="modal fade" id="medida2" tabindex="-1" aria-labelledby="medida2Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida2Label">Contorno de Cuello</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/TZzaGHdcCZ0" 
+                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"> 
+                                    </iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-                
-                <div class="card col-8 col-sm-4 col-md-3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OM1PGABODys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-top"></iframe>
-                    <div class="card-body">
-                        <span>Contorno de pecho</span>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida3">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Largo Talle Trasero</h2>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="card col-8 col-sm-4 col-md-3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/B24TUok7g2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-top"></iframe>
-                    <div class="card-body">
-                        <span>Altura de tiro</span>
+
+                    <div class="modal fade" id="medida3" tabindex="-1" aria-labelledby="medida3Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida3Label">Largo Talle Trasero</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/6-uzsyLYXkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-    
-                <!-- Y así hasta tener todas las medidas, luego: -->
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida4">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Largo Talle Delantero</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida4" tabindex="-1" aria-labelledby="medida4Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida4Label">Largo Talle Delantero</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/Z8MqsQPbg70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida5">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Ancho de Hombro</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida5" tabindex="-1" aria-labelledby="medida5Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida5Label">Ancho de Hombro</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/MC_mGKA8z_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida6">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Ancho de Espalda</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida6" tabindex="-1" aria-labelledby="medida6Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida6Label">Ancho de Espalda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/bZFsfsP6eg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida7">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Contorno de Pecho</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida7" tabindex="-1" aria-labelledby="medida7Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida7Label">Contorno de Pecho</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/OM1PGABODys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida8">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Altura de Busto</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida8" tabindex="-1" aria-labelledby="medida8Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida8Label">Altura de Busto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/Eo2DlzDo7ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida9">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Separación de Busto</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida9" tabindex="-1" aria-labelledby="medida9Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida9Label">Separación de Busto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/bqpSwMKQytI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida10">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Contorno de Cintura</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida10" tabindex="-1" aria-labelledby="medida10Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida10Label">Contorno de Cintura</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/bgh9mdepiKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida11">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Contorno de Cadera</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida11" tabindex="-1" aria-labelledby="medida11Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida11Label">Contorno de Cadera</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/AoK47JJZ8w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida12">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Altura de Cadera</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida12" tabindex="-1" aria-labelledby="medida12Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida12Label">Altura de Cadera</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/dDWjjlLYHl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida13">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Largo de Brazo</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida13" tabindex="-1" aria-labelledby="medida13Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida13Label">Largo de Brazo</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/bnKqGqfcXYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida14">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Bajada de Sisa Delantera</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida14" tabindex="-1" aria-labelledby="medida14Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida14Label">Bajada de Sisa Delantera</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/QiUsB1tghK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida14b">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Bajada de Sisa Espalda</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida14b" tabindex="-1" aria-labelledby="medida14bLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida14bLabel">Bajada de Sisa Espalda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/QiUsB1tghK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida15">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Contorno de Brazo</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida15" tabindex="-1" aria-labelledby="medida15Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida15Label">Contorno de Brazo</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/sG6yboMbpvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida16">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Contorno de Muñeca</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida16" tabindex="-1" aria-labelledby="medida16Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida16Label">Contorno de Muñeca</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/BLQDhfmsa5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida17">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Largo de Tiro</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida17" tabindex="-1" aria-labelledby="medida17Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida17Label">Largo de Tiro</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/B24TUok7g2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida18">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Largo de Pierna</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida18" tabindex="-1" aria-labelledby="medida18Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida18Label">Largo de Pierna</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/_E1__Pbu-r8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida19">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Altura de Rodilla</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida19" tabindex="-1" aria-labelledby="medida19Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida19Label">Altura de Rodilla</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/kehweIM6KmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="container"></iframe>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida20">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Contorno de Pierna</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida20" tabindex="-1" aria-labelledby="medida20Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida20Label">Contorno de Pierna</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img src="https://ss-static-01.esmsv.com/id/79166/galeriaimagenes/obtenerimagen/?id=21&tipoEscala=stretch&width=911&height=683" class="container">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida21">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Contorno de Rodilla</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida21" tabindex="-1" aria-labelledby="medida21Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida21Label">Contorno de Rodilla</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img src="https://ss-static-01.esmsv.com/id/79166/galeriaimagenes/obtenerimagen/?id=33&tipoEscala=stretch&width=920&height=668" class="container">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida22">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center">Contorno de Pantorrilla</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida22" tabindex="-1" aria-labelledby="medida22Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida22Label">Contorno de Pantorrilla</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img src="https://ss-static-01.esmsv.com/id/79166/galeriaimagenes/obtenerimagen/?id=25&tipoEscala=stretch&width=803&height=603" class="container">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida23">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Contorno de Tobillo</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida23" tabindex="-1" aria-labelledby="medida23Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida23Label">Contorno de Tobillo</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img src="https://ss-static-01.esmsv.com/id/79166/galeriaimagenes/obtenerimagen/?id=35&tipoEscala=stretch&width=920&height=550" class="container" >
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida24">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Largo de Tiro Delantero</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida24" tabindex="-1" aria-labelledby="medida24Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida24Label">Largo de Tiro Delantero</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img src="https://ss-static-01.esmsv.com/id/79166/galeriaimagenes/obtenerimagen/?id=29&tipoEscala=stretch&width=771&height=1028" class="container">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-8 col-sm-4 col-md-3">
+
+                    <div type="button"data-bs-toggle="modal" data-bs-target="#medida25">
+                        <div class="medida card">
+                            <div class="medida__titulo">
+                                <h2 class="text-center text-wrap">Largo de Tiro Trasero</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="medida25" tabindex="-1" aria-labelledby="medida25Label" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="medida25Label">Largo de Tiro Delantero</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <img src="https://ss-static-01.esmsv.com/id/79166/galeriaimagenes/obtenerimagen/?id=31&tipoEscala=stretch&width=771&height=1028" class="container">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <form class="input-group">
+                                        <label class="input-group-text">Medida</label>
+                                        <input required type="number" class="form-control">
+                                        <button type="button" class="btn btn-primary ms-2" data-bs-dismiss="modal" aria-label="Close">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             
         </section>
 
         <!-- Sección donde se completan datos -->
-        <section class="row">
+        <section class="container">
 
-            <h3 class="seccion__descripcion">
+            <h3 class="main__descripcion">
                 Por último completa este formulario para terminar de completar los datos del cosplay que necesitas!
             </h3>
 
-            <form class="form" action="">
+            <div class="row">
+                <form class="form col-12 col-md-8 mb-3">
 
-                <div class="form-group">
-                    <label for="nombre-cosplay" class="form-label mb-0">Nombre del cosplay</label>
-                    <input required type="text" id="nombre-cosplay" name="nombre-cosplay" class="form-control mb-3">
+                    <div class="form-group">
+                        <label for="nombre-cosplay" class="form-label mb-0">Nombre del cosplay</label>
+                        <input required type="text" id="nombre-cosplay" name="nombre-cosplay" class="form-control mb-3">
+                    </div>
+    
+                    <div class="form__group">
+                        <label for="edad" class="form-label mb-0">Edad (de quien usa el cosplay/ Vestido/ Disfraz)</label>
+                        <input required type="number" id="edad" name="edad" class="form-control mb-3">
+                    </div>
+    
+                    <div class="form__group">
+                        <label for="nombre" class="form-label mb-0">Nombre y apellido</label>
+                        <input required type="text" id="nombre" name="nombre" class="form-control mb-3">
+                    </div>
+    
+                    <div class="form__group">
+                        <label for="celular" class="form-label mb-0">Celular</label>
+                        <input required type="number" id="celular" nombre="celular" class="form-control mb-3">
+                    </div>
+    
+                    <div class="form__group">
+                        <label for="comentario" class="form-label mb-0">Otras medidas o info a tener en cuenta (Ej: Largo de pollera, Largo pantalón corto, etc):</label>
+                        <textarea name="comentario" id="comentario" rows="5" class="form-control mb-3"></textarea>
+                    </div>
+    
+                    <div class="mt-3 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-outline-dark w-25 py-3">
+                            Enviar
+                        </button>
+                    </div>
+                    
+                </form>
+
+                <div class="col-12 col-md-4 p-3 bg-dark text-white d-flex justify-content-center align-items-center ">
+                    <p class="lead fs-2">
+                        Gracias por llegar hasta acá y confiar en nosotros! Pensá que para tu próximo cosplay ya no vas a necesitar pasar por todo esto de nuevo.
+                    </p>
                 </div>
-
-                <div class="form__group">
-                    <label for="edad" class="form-label mb-0">Edad (de quien usa el cosplay/ Vestido/ Disfraz)</label>
-                    <input required type="number" id="edad" name="edad" class="form-control mb-3">
-                </div>
-
-                <div class="form__group">
-                    <label for="nombre" class="form-label mb-0">Nombre y apellido</label>
-                    <input required type="text" id="nombre" name="nombre" class="form-control mb-3">
-                </div>
-
-                <div class="form__group">
-                    <label for="celular" class="form-label mb-0">Celular</label>
-                    <input required type="number" id="celular" nombre="celular" class="form-control mb-3">
-                </div>
-
-                <div class="form__group">
-                    <label for="comentario" class="form-label mb-0">Otras medidas o info a tener en cuenta (Ej: Largo de pollera, Largo pantalón corto, etc):</label>
-                    <textarea name="comentario" id="comentario" rows="5" class="form-control mb-3"></textarea>
-                </div>
-
-                <div class="mt-3 d-flex justify-content-center">
-                    <button type="submit" class="btn btn-dark fs-3 py-3 px-5">
-                        Enviar
-                    </button>
-                </div>
-                
-            </form>
-
+            </div>
         </section>
 
     </main>
