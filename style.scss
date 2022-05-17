@@ -3,14 +3,4 @@
 @import './sass/global';
 @import './sass/header';
 @import './sass/footer';
-
-@import './sass/index';
-@import './sass/contacto';
-@import './sass/preguntas';
-@import './sass/medidas';
-
-//BORRAR
-.b {
-    background-color: $color-info;
-    color: black;
-}
+@import './sass/main';
