@@ -130,179 +130,216 @@
     </header>
 
     <!-- MAIN -->
-   <main class="main main--tienda">
-    <div class="main__titulo p-5">
-        <h1 class="bounce-top">TIENDA</h1>
-    </div>
-
-    <!-- Seccion principal -->
-    <section class="d-flex flex-column gap-5">
-
-        <div class="row d-flex justify-content-evenly">
-
-            <!-- Botones de orden-->
-            <div class="col-5">
-                <form class="form">
-                    <label for="orden" class="form-label">Ordenar por</label>
-                    <select name="orden" id="orden" class="form-select">
-                        <option value="pred"><span>Mas populares</span></option>
-                        <option value="menor-precio">Menor precio</option>
-                        <option value="mayor-precio">Mayor precio</option>
-                        <option value="nombre-asc">Nombre ascendente</option>
-                        <option value="nombre-des">Nombre descendente</option>
-                    </select>
-                </form>
-            </div>
-
-            <!-- Opciones de filtro-->
-            <div class="col-5 d-none d-md-flex">
-                <form>
-                    <h2>Filtrar por</h2>
-                    
-                    <div class="form-check">
-                        <input type="checkbox" id="oferta" name="filtrado-articulos" class="form-check-input">
-                        <label for="oferta" class="form-check-label">Oferta</label>
-                        <br>
-                    </div>
-
-                    <div class="form-check">
-                        <input type="checkbox" id="stock" name="filtrado-articulos" class="form-check-input">
-                        <label for="stock" class="form-check-label">En stock</label>
-                        <br>
-                    </div>
-                    
-                    <div class="form-check">
-                        <input type="checkbox" id="accesorios" name="filtrado-articulos" class="form-check-input">
-                        <label for="accesorios" class="form-check-label">Accesorios</label>
-                        <br>
-                    </div>
-                    
-                    <div class="form-check">
-                        <input type="checkbox" id="especiales" name="filtrado-articulos" class="form-check-input">
-                        <label for="especiales" class="form-check-label">Especiales</label>
-                        <br>
-                    </div>
-                                        
-                </form>
-            </div>
-
-            <div class="form col-5 d-flex d-md-none">
-                <form class="col-12">
-                    <label for="filtradoMobile" class="form-label">Filtrar por</label>
-                    <select name="filtradoMobile" id="filtradoMobile" class="form-select">
-                        <option value="pred"><span>Oferta</span></option>
-                        <option value="menor-precio">En stock</option>
-                        <option value="mayor-precio">Accesorios</option>
-                        <option value="nombre-asc">Especiales</option>
-                    </select>
-                </form>
-            </div>
+   <main class="container p-0 mt-3 mb-4 main main main--tienda">
+        <div class="main__titulo p-4">
+            <h1 class="bounce-top">TIENDA</h1>
         </div>
 
-        <!-- Catálogo -->
-        <section class="d-flex flex-column align-items-center">
+        <!-- Seccion principal -->
+        <section class="d-flex flex-column gap-5">
 
-            <div class="row d-flex gap-5 justify-content-center mb-5 text-center">
+            <div class="row d-flex justify-content-evenly">
 
-                <article class="card col-8 col-sm-4 col-md-3 cosplay">
-                    <img src="../images/cosplays/evangelion-rei.jpg" alt="rei-ayanami" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">SEIFUKU <br> EVANGELION</h3>
-                        <h4 class="card-text">$ 6500</h4>
-                    </div>
+                <!-- Botones de orden-->
+                <div class="col-5">
+                    <form class="form">
+                        <label for="orden" class="form-label">Ordenar por</label>
+                        <select name="orden" id="orden" class="form-select">
+                            <option value="pred"><span>Mas populares</span></option>
+                            <option value="menor-precio">Menor precio</option>
+                            <option value="mayor-precio">Mayor precio</option>
+                            <option value="nombre-asc">Nombre ascendente</option>
+                            <option value="nombre-des">Nombre descendente</option>
+                        </select>
+                    </form>
+                </div>
 
-                    <div class="cosplay__carrito">  
-                        <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
-                        <a href="">
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </a>
-                    </div>
-                </article>
+                <!-- Opciones de filtro-->
+                <div class="col-5 d-none d-md-flex">
+                    <form>
+                        <h2>Filtrar por</h2>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" id="oferta" name="filtrado-articulos" class="form-check-input">
+                            <label for="oferta" class="form-check-label">Oferta</label>
+                            <br>
+                        </div>
 
-                <article class="card col-8 col-sm-4 col-md-3 cosplay">
-                    <img src="../images/cosplays//jujutsu-nobara.jpg" alt="nobara"class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">NOBARA KUGISAKI <br> JUJUTSU KAISEN</h3>
-                        <h4 class="card-text">$ 7000</h4>
-                    </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="stock" name="filtrado-articulos" class="form-check-input">
+                            <label for="stock" class="form-check-label">En stock</label>
+                            <br>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" id="accesorios" name="filtrado-articulos" class="form-check-input">
+                            <label for="accesorios" class="form-check-label">Accesorios</label>
+                            <br>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" id="especiales" name="filtrado-articulos" class="form-check-input">
+                            <label for="especiales" class="form-check-label">Especiales</label>
+                            <br>
+                        </div>
+                                            
+                    </form>
+                </div>
 
-                    <div class="cosplay__carrito">  
-                        <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
-                        <a href="">
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="card col-8 col-sm-4 col-md-3 cosplay">
-                    <img src="../images/cosplays/school-girl.jpg" alt="school-girl"class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">SEIFUKU TRADICIONAL</h3>
-                        <h4 class="card-text">$ 6000</h4>
-                    </div>
-
-                    <div class="cosplay__carrito">  
-                        <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
-                        <a href="">
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="card col-8 col-sm-4 col-md-3 cosplay">
-                    <img src="../images/cosplays/shigenki-saco.jpg" alt="shigenki-saco"class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">SACO MILITAR <br> SHINGEKI NO KYOJIN</h3>
-                        <h4 class="card-text">$ 9500</h4>
-                    </div>
-
-                    <div class="cosplay__carrito">  
-                        <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
-                        <a href="">
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="card col-8 col-sm-4 col-md-3 cosplay">
-                    <img src="../images/cosplays/shingeki-chaqueta.jpg" alt="shingeki-chaqueta"class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">CHAQUETA <br> SHINGEKI NO KYOJIN</h3>
-                        <h4 class="card-text">$4500</h4>
-                    </div>
-
-                    <div class="cosplay__carrito">  
-                        <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
-                        <a href="">
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="card col-8 col-sm-4 col-md-3 cosplay">
-                    <img src="../images/cosplays/ronnie-theBoy.jpg" alt="ronnie"class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">RONNIE</h3>
-                        <h4 class="card-text">$ inf</h4>
-                    </div>
-
-                    <div class="cosplay__carrito">  
-                        <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
-                        <a href="">
-                            <i class="fa-solid fa-cart-plus"></i>
-                        </a>
-                    </div>                
-                </article>
-
+                <div class="form col-5 d-flex d-md-none">
+                    <form class="col-12">
+                        <label for="filtradoMobile" class="form-label">Filtrar por</label>
+                        <select name="filtradoMobile" id="filtradoMobile" class="form-select">
+                            <option value="pred"><span>Oferta</span></option>
+                            <option value="menor-precio">En stock</option>
+                            <option value="mayor-precio">Accesorios</option>
+                            <option value="nombre-asc">Especiales</option>
+                        </select>
+                    </form>
+                </div>
             </div>
-                
-            <div class="btn btn-dark col-4 mt-2">
-                <button>Mostrar más</button>
-            </div>
+
+            <!-- Catálogo -->
+            <section class="d-flex flex-column align-items-center">
+
+                <div class="row d-flex gap-5 justify-content-center mb-5 text-center">
+
+                    <article class="card col-6 col-sm-4 col-md-3 cosplay">
+                        <img src="../assets/images/cosplays/evangelion-rei.jpg" alt="rei-ayanami-cosplay" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">SEIFUKU <br> EVANGELION</h3>
+                            <h4 class="card-text">$ 6500</h4>
+                        </div>
+
+                        <div class="cosplay__carrito">  
+                            <!-- Lo dejo armado con una clase para agregar la funcionalidad cuando se agrega algo al carrito en un futuro -->
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="card col-6 col-sm-4 col-md-3 cosplay">
+                        <img src="../assets/images/cosplays//jujutsu-nobara.jpg" alt="nobara-cosplay"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">NOBARA KUGISAKI <br> JUJUTSU KAISEN</h3>
+                            <h4 class="card-text">$ 7000</h4>
+                        </div>
+
+                        <div class="cosplay__carrito">  
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="card col-6 col-sm-4 col-md-3 cosplay">
+                        <img src="../assets/images/cosplays/school-girl.jpg" alt="school-girl-cosplay"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">SEIFUKU TRADICIONAL</h3>
+                            <h4 class="card-text">$ 6000</h4>
+                        </div>
+
+                        <div class="cosplay__carrito"> 
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="card col-6 col-sm-4 col-md-3 cosplay">
+                        <img src="../assets/images/cosplays/shigenki-saco.jpg" alt="shigenki-saco-cosplay"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">SACO MILITAR <br> SHINGEKI NO KYOJIN</h3>
+                            <h4 class="card-text">$ 9500</h4>
+                        </div>
+
+                        <div class="cosplay__carrito">
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="card col-6 col-sm-4 col-md-3 cosplay">
+                        <img src="../assets/images/cosplays/shingeki-chaqueta.jpg" alt="shingeki-chaqueta-cosplay"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">CHAQUETA <br> SHINGEKI NO KYOJIN</h3>
+                            <h4 class="card-text">$4500</h4>
+                        </div>
+
+                        <div class="cosplay__carrito"> 
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="card col-6 col-sm-4 col-md-3 cosplay">
+                        <img src="../assets/images/cosplays/ronnie-theBoy.jpg" alt="ronnie-el-mejor-gato"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">RONNIE</h3>
+                            <h4 class="card-text">$ inf</h4>
+                        </div>
+
+                        <div class="cosplay__carrito">
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>                
+                    </article>
+
+                    <article class="card col-6 col-sm-4 col-md-3 cosplay">
+                        <img src="../assets/images/cosplays/ronnie-theBoy.jpg" alt="ronnie-el-mejor-gato"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">RONNIE</h3>
+                            <h4 class="card-text">$ inf</h4>
+                        </div>
+
+                        <div class="cosplay__carrito">
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>                
+                    </article>
+
+                    <article class="card col-6 col-sm-4 col-md-3 cosplay">
+                        <img src="../assets/images/cosplays/ronnie-theBoy.jpg" alt="ronnie-el-mejor-gato"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">RONNIE</h3>
+                            <h4 class="card-text">$ inf</h4>
+                        </div>
+
+                        <div class="cosplay__carrito">
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>                
+                    </article>
+
+                    <article class="card col-6 col-sm-4 col-md-3 cosplay">
+                        <img src="../assets/images/cosplays/ronnie-theBoy.jpg" alt="ronnie-el-mejor-gato"class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">RONNIE</h3>
+                            <h4 class="card-text">$ inf</h4>
+                        </div>
+
+                        <div class="cosplay__carrito">
+                            <a href="">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                        </div>                
+                    </article>
+
+                </div>
+                    
+                <button class="btn main__boton col-4 mt-2">
+                    Mostrar más
+                </button>
+
+            </section>
 
         </section>
-
-    </section>
 
 </main>
 
