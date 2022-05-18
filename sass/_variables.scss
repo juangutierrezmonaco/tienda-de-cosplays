@@ -12,3 +12,29 @@ $color-info: #E1FAED;
 $facebook-color: #3b5998;
 $youtube-color: red;
 $wpp-color: #43CC51;
+
+// Mapa de redes sociales
+$redes: (
+    facebook: $facebook-color,
+    wpp: $wpp-color,
+    youtube: $youtube-color
+);
+
+@each $name, $color in $redes {
+    .#{$name} {
+        &:hover {
+            color: white;
+            background-color: $color;
+        }
+    }
+}
+
+// Mixin -- Agrega sombra y hace un blur a todo o al fondo
+@mixin boxOptions ($shadow-color, $blur-all){
+    box-shadow: $shadow-color 0px 5px 15px;
+    backdrop-filter: blur(2px);
+    
+    @if ($blur-all == 'yes'){
+        filter: blur(5px);
+    }
+}

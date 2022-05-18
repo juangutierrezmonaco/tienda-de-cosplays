@@ -48,9 +48,7 @@
                 aspect-ratio: 1/1;
                 font-size: 3vw;
 
-                display: flex; /* Para poder alinearlo */
-                justify-content: center;
-                align-items: center;
+                @extend .flexFullCenter;
             }
 
             &:hover {
@@ -64,14 +62,6 @@
                 .fa-instagram {
                     background: #d6249f;
                     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); 
-                }
-
-                .fa-facebook-f {
-                    background-color: $facebook-color;
-                }
-
-                .fa-youtube {
-                    background-color: $youtube-color;
                 }
 
             }
