@@ -31,6 +31,11 @@ body{
     background-color: #F7F7F7;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .form-control:focus {
     border: solid 1px $color-primary-focus;
     box-shadow: $color-primary-focus 0px 0px 15px;

@@ -8,33 +8,38 @@
 
 
 <url>
-  <loc>https://mi-repositorio-eight.vercel.app/index.html</loc>
-  <lastmod>2022-05-17T22:37:43+00:00</lastmod>
+  <loc>https://oraoracostume.vercel.app/</loc>
+  <lastmod>2022-05-19T13:31:43+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://mi-repositorio-eight.vercel.app/pages/tienda.html</loc>
-  <lastmod>2022-05-17T22:37:43+00:00</lastmod>
+  <loc>https://oraoracostume.vercel.app/index.html</loc>
+  <lastmod>2022-05-19T13:31:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mi-repositorio-eight.vercel.app/pages/medidas.html</loc>
-  <lastmod>2022-05-17T22:37:43+00:00</lastmod>
+  <loc>https://oraoracostume.vercel.app/pages/tienda.html</loc>
+  <lastmod>2022-05-19T13:31:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mi-repositorio-eight.vercel.app/pages/envios.html</loc>
-  <lastmod>2022-05-17T22:37:43+00:00</lastmod>
+  <loc>https://oraoracostume.vercel.app/pages/medidas.html</loc>
+  <lastmod>2022-05-19T13:31:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mi-repositorio-eight.vercel.app/pages/preguntas.html</loc>
-  <lastmod>2022-05-17T22:37:43+00:00</lastmod>
+  <loc>https://oraoracostume.vercel.app/pages/envios.html</loc>
+  <lastmod>2022-05-19T13:31:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mi-repositorio-eight.vercel.app/pages/contacto.html</loc>
-  <lastmod>2022-05-17T22:37:43+00:00</lastmod>
+  <loc>https://oraoracostume.vercel.app/pages/preguntas.html</loc>
+  <lastmod>2022-05-19T13:31:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://oraoracostume.vercel.app/pages/contacto.html</loc>
+  <lastmod>2022-05-19T13:31:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
