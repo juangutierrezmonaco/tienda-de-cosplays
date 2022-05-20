@@ -83,6 +83,7 @@
 /*                  INDEX Y TIENDA                            */
 /**************************************************************/
 .cosplay {
+    padding: 10px;
     position: relative;
     background-image: url("../assets/images/backgrounds/cosplay.webp");
     background-repeat: no-repeat;
@@ -90,7 +91,7 @@
 
     transition: all .5s;
 
-    i {
+    i {     //Icono de carrito
         position: absolute;
         bottom: 0;
         right: 0;
@@ -111,17 +112,29 @@
             opacity: 1;
         }
     }
+
+    &__imagen {
+        object-fit: cover;
+    }
+
+    &__footer {
+        background-color: rgba($color: #FDE9E2, $alpha: 0.5);
+    }
 }
 
 @media screen and (max-width: 992px){   
-    /*Para que aparezca el carrito en versiones mobile y tablet*/
+    
     .cosplay{
-        i {
+        i {  //Para que aparezca el carrito en versiones mobile y tablet
             opacity: 1;
+        }
 
-            &:hover {
-                transform: scale(1); /*Para anular el hover*/
-            }
+        &:hover {
+            transform: scale(1); /*Para anular el hover*/
+        }
+
+        &__footer * {
+            font-size: 3vh;
         }
     }
 }
