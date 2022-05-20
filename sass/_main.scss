@@ -121,8 +121,8 @@
         background-color: rgba($color: #FDE9E2, $alpha: 0.5);
     }
 }
-
-@media screen and (max-width: 992px){   
+//Que el carrito se haga visible en dispositivos touch o si se imprime
+@media screen and (pointer:coarse), print, (max-width: 992px) {   
     
     .cosplay{
         i {  //Para que aparezca el carrito en versiones mobile y tablet
