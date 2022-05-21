@@ -57,22 +57,28 @@
         }
 
         &--go {     //Si el botón direcciona a alguna parte
-            transition: all .5s;
+            transition: all .7s;
 
             &::after {
                 font-family: "Font Awesome 5 Free";
                 content: " \f061";
-                display: none;
-                padding-right: 3px;
-                vertical-align: middle;
                 font-weight: 900;
+                vertical-align: middle;
+
+                
+                height: 0;
+                width: 0;
+                opacity: 0;
                 transition: all .5s;
             }
 
             &:hover {
                 &::after {
-                    margin-left:10px;
-                    display: inline-block;
+                    margin-left: 10px;
+                    padding-right: 3px;
+                    opacity: 1;
+                    height: 100%;
+                    width: auto;
                 }
             }
         }
@@ -119,19 +125,6 @@
 
     &__footer {
         background-color: rgba($color: #FDE9E2, $alpha: 0.5);
-    }
-}
-//Que el carrito se haga visible en dispositivos touch o si se imprime
-@media screen and (pointer:coarse), print, (max-width: 992px) {   
-    
-    .cosplay{
-        i {  //Para que aparezca el carrito en versiones mobile y tablet
-            opacity: 1;
-        }
-
-        &:hover {
-            transform: scale(1); /*Para anular el hover*/
-        }
     }
 }
 
@@ -181,7 +174,7 @@
 /*                          PREGUNTAS                         */
 /**************************************************************/
 .talles {
-    a {
+    button {
         padding: 5px 20px;
     }
 }

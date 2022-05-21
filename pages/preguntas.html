@@ -141,6 +141,48 @@
         </h2>
 
         <section class="main__seccion">
+            
+
+            <!-- Imágenes a la que llevan los botones de esta sección (Modal)-->
+            <div class="modal fade" id="modalTalleS" tabindex="-1" aria-labelledby="modalTalleSLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="../assets/images/medidas/talle-s.png" alt="Tabla de Talles - Talle S">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalTalleM" tabindex="-1" aria-labelledby="modalTalleMLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="../assets/images/medidas/talle-m.png" alt="Tabla de Talles - Talle M">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalTalleL" tabindex="-1" aria-labelledby="modalTalleLLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="../assets/images/medidas/talle-l.png" alt="Tabla de Talles - Talle L">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalTallesTodos" tabindex="-1" aria-labelledby="modalTallesTodosLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="../assets/images/medidas/tabla-de-talles.png" alt="Tabla de Talles Completa">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="container d-grid gap-5">
 
@@ -151,10 +193,15 @@
                         <div class="card-text d-lg-flex">
                             <p class="lead m-0">
                                 Para realizar nuestro trabajo y tu pedido más dinámicos, trabajamos con tres tablas de talles establecidas: 
+
+                                <!-- Botones -->
                                 <span class="talles fs-3 text-nowrap">
-                                    <a target="_blank" href="../assets/images/medidas/talle-s.png" class="btn-danger">S</a>
-                                    <a target="_blank" href="../assets/images/medidas/talle-m.png" class="btn-danger">M</a>
-                                    <a target="_blank" href="../assets/images/medidas/talle-l.png" class="btn-danger">L</a>
+                                
+                                    <button type="button" class="btn-danger" data-bs-toggle="modal" data-bs-target="#modalTalleS">S</button>
+
+                                    <button type="button" class="btn-danger" data-bs-toggle="modal" data-bs-target="#modalTalleM">M</button>
+
+                                    <button type="button" class="btn-danger" data-bs-toggle="modal" data-bs-target="#modalTalleL">L</button>
                                 </span>
                             </p>
                             <p class="lead m-0">De todos modos, si ninguna de estas medidas se adecuan a tu cuerpo y tus comodidades, simplemente completa una nueva tabla de talles con tus medidas exactas.</p>
@@ -168,12 +215,13 @@
                         <h2 class="card-title border-bottom border-light border-2">¿Cuáles son las medidas que debo tomar?</h2>
                         <div class="card-text d-lg-flex">
                             <p class="lead m-0">
-                                Las medidas necesarias para confeccionar un cosplay se encuentran en la <a target="_blank" href="../assets/images/medidas/tabla-de-talles.png" class="bg-white text-dark">tabla de talles completa</a>
+                                Las medidas necesarias para confeccionar un cosplay se encuentran en la 
+                                <button type="button" class="bg-white text-dark p-1" data-bs-toggle="modal" data-bs-target="#modalTallesTodos">tabla de talles completa</button>
                             </p>
 
                             <p class="lead m-0">
                                 Si necesitas un instructivo de cómo llenar esta tabla, podés encontrarlo en la sección 
-                                <a href="./medidas.html" class="btn-danger main__boton--go p-1">MEDIDAS</a>
+                                <a href="./medidas.html" class="btn-danger p-1">MEDIDAS</a>
                             </p>
                                 
                         </div>
@@ -209,7 +257,7 @@
                                 En cuánto a los cosplays personalizados, trabajamos con el 50% de seña del pedido que se haga y al despacharlo se abona el otro 50%. Si en medio del armado del cosplay o prenda, se cancela el pedido, la seña <span class="text-decoration-underline">NO SE RECUPERA</span>. 
                             </p>
                             <p class="lead">
-                                Una vez que tengas tus medidas tomadas, completa el formulario en la sección <a href="./medidas.html" class="btn-danger main__boton--go p-1">MEDIDAS</a> sobre el cosplay que necesitas y nosotros nos comunicamos con vos para acercarte los precios y tiempos del mismo!
+                                Una vez que tengas tus medidas tomadas, completa el formulario en la sección <a href="./medidas.html" class="btn-danger p-1">MEDIDAS</a> sobre el cosplay que necesitas y nosotros nos comunicamos con vos para acercarte los precios y tiempos del mismo!
                             </p>
                         </div>
                     </div>
@@ -236,7 +284,7 @@
                         <h2 class="card-title border-bottom border-light border-2">¿Cuáles son los costos del envío?</h2>
                         <div class="card-text d-lg-flex">
                             <p class="lead">
-                                Para saber los costos y tiempos de envío, dirigite a la sección <a href="./envios.html" class="btn-danger main__boton--go p-1">ENVÍOS</a> y completa el formulario!
+                                Para saber los costos y tiempos de envío, dirigite a la sección <a href="./envios.html" class="btn-danger p-1">ENVÍOS</a> y completa el formulario!
                             </p>
                         </div>
                     </div>

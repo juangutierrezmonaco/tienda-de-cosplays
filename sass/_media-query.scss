@@ -1,0 +1,95 @@
+@media screen and (min-width: 768px) {
+    // Generales
+    .boton__fijo--goUp {
+        bottom: 100px;
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    // Generales
+    body {
+        padding-bottom: 15vh;
+    }
+
+    // Header
+    .header__nav {
+        min-height: 16vh;
+        background: none;
+        background-color: blueviolet;
+
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+    }
+
+    // Footer
+    .footer__redes li{
+        i {
+            font-size: 6vw;
+            height: 9vw;
+            aspect-ratio: 1/1;
+        }
+    }
+}
+    
+@media screen and (max-width: 425px) {
+    // Header
+    .header__nav {
+        &__item {
+
+            > * {
+                font-size: 1.1rem;
+            }
+        }
+
+        img {
+            height: 60%;
+        }
+    }
+    
+    // Footer
+    .footer__redes li{
+        i {
+            font-size: 8vw;
+            height: 12vw;
+            aspect-ratio: 1/1;
+        }
+    }
+}
+
+@media screen and (max-width: 320px){  //Diseñada principalmente para 280px
+    // Header
+    .header__nav {
+        &__item {
+
+            &:first-child {     //Elimino el logo 
+                display: none;
+            }
+        }
+    }
+
+    // Footer 
+    .footer .row:first-of-type {    //Selecciono la primera fila
+        div:nth-child(n) {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (pointer:coarse), print, (max-width: 992px) {   
+    // Main
+
+    //Que el carrito se haga visible en dispositivos touch o si se imprime
+    .cosplay{
+        i {  //Para que aparezca el carrito en versiones mobile y tablet
+            opacity: 1;
+        }
+
+        &:hover {
+            transform: scale(1); /*Para anular el hover*/
+        }
+    }
+}
+
+// Nota: La página funciona sin romperse hasta exactamente 238px inclusive.
