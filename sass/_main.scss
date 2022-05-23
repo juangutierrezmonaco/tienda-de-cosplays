@@ -56,6 +56,15 @@
             transform: scale(1.2);
         }
 
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:active:focus {
+            background-color: $color-primary-focus;
+            box-shadow: $color-primary-focus 0px 0px 10px;
+        }
+
         &--go {     //Si el botón direcciona a alguna parte
             transition: all .7s;
 
@@ -165,8 +174,8 @@
 
 .main--medidas {
     .modal-body > * {
-        height: 60vh;
-        width: 100%;
+        min-height: 60vh;
+        min-width: 100%;
     }
 }
 

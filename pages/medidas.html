@@ -161,9 +161,26 @@
         
 
         <!-- Como tomar las N medidas -->
-        <section class="main__seccion">   
+        <section class="main__seccion">  
+
+            <!-- Modal que se usa más abajo para ver la tabla de talles -->
+            <div class="modal fade" id="modalTallesTodosMedidas" tabindex="-1" aria-labelledby="modalTallesTodosMedidasLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../assets/images/medidas/tabla-de-talles.png" alt="Tabla de Talles Completa">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row mb-5 bg-dark text-white p-1">
-                <p class="lead text-center">Acá abajo podés ver cómo tomar TODAS las medidas que necesitas y las podés completar también, haciendo click en cada una. O sino, podés llenar la <a target="_blank" href="../assets/images/medidas/tabla-de-talles.png" class="bg-white text-dark">tabla de talles completa</a> y enviárnosla. Recordá que todos nuestros medios de comunicación se hallan en <a href="./contacto.html" class="btn-danger p-1">CONTACTO</a>
+                <p class="lead text-center">Acá abajo podés ver cómo tomar TODAS las medidas que necesitas y las podés completar también, haciendo click en cada una. O sino, podés llenar la 
+                <button type="button" class="bg-white text-dark px-1 border-0" data-bs-toggle="modal" data-bs-target="#modalTallesTodosMedidas">tabla de talles completa</button> 
+                y enviárnosla. Recordá que todos nuestros medios de comunicación se hallan en <a href="./contacto.html" class="btn-danger p-1">CONTACTO</a>
                 </p> 
             </div>  
                
