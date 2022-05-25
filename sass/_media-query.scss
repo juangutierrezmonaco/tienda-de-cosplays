@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
     // Generales
-    body {
+    body {  //Espacio para header en mobile
         padding-bottom: 15vh;
     }
 
@@ -14,6 +14,7 @@
         min-height: 16vh;
         background: none;
         background-color: blueviolet;
+        border-top: solid rgba($color: #000000, $alpha: .5) 1px;
 
         position: fixed;
         bottom: 0;
