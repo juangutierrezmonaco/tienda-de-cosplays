@@ -122,7 +122,8 @@
     }
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
+        box-shadow: black 0px 0px 10px;
 
         i {
             opacity: 1;
