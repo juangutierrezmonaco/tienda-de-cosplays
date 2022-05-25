@@ -79,12 +79,29 @@
     }
     
     // Footer
-    .footer__redes li{
-        i {
-            font-size: 8vw;
-            height: 12vw;
-            aspect-ratio: 1/1;
+    .footer {
+        &__redes {
+            li {
+                i {
+                    font-size: 8vw;
+                    height: 12vw;
+                    aspect-ratio: 1/1;
+                }
+            }
         }
+
+        &__legales {
+            p {
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+    
+                span:nth-child(2) {     //Elimino el guión
+                    display: none;
+                }
+            }
+        }
+
     }
 }
 
