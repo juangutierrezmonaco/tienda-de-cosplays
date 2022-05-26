@@ -165,7 +165,9 @@
         }
 
         &:hover {
-            @include boxOptions (black, '');
+            box-shadow: black 0px 5px 15px;
+            backdrop-filter: blur(2px);
+
             h2 {
                 background-color: $color-danger;
                 color: white;
